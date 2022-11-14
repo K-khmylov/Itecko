@@ -1,0 +1,122 @@
+
+@mixin flex-center ($display, $align-items, $justidy-content){
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justidy-content;
+}
+
+.above_header{
+    text-align: center;
+    padding: 10px 0;
+    background: #282624;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #DEDEDE;
+}
+
+header{
+    @include flex-center(flex, center, space-between);
+    padding: 9px 0;
+    .nav_bar{
+        @include flex-center(flex, center, center);
+        a{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #393939;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background-color:#00D2FF;
+                width: 100%;
+                height: 2px;
+                transform: scale(0);
+                transition: all .2s linear;
+            }
+            &:not(:first-child){
+                margin-left: 50px;
+            }
+            transition: all .2s linear;
+            &:hover{
+                transform: translateY(-2px);
+                color: #00D2FF;
+            }
+            &:hover::before{
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.under_header{
+    background-image: url(../assets/under_header/bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow-y: hidden;
+    .orange_trapezoid{
+        position: absolute;
+        left: 0;
+        width: 1028px;
+        height: 100%;
+        background: linear-gradient(99.55deg, #00D2FF 2.75%, #3A7BD5 101.45%);
+        opacity: 0.9;
+        clip-path: polygon(0 0, 55% 0%, 100% 100%, 0% 100%);
+    }
+    .cam_block{
+        margin: 0 auto;
+        @include flex-center(flex, center, center);
+        flex-direction: column;
+        img{
+            width: 50%;
+            position: relative;
+            z-index: 2;
+            animation: cam_move 3s linear infinite;
+        }
+        p{
+            cursor: default;
+            font-weight: 600;
+            font-size: 152px;
+            line-height: 185px;
+            text-align: center;
+            transform: matrix(1, 0, -0.07, 1, 0, 0);
+            color: #FFFFFF;
+            position: absolute;
+            top: 40%;
+            &:nth-child(2){
+                z-index: 1;
+            }
+            &:nth-child(3){
+                -webkit-text-stroke: 2px #FFFFFF;
+                color: transparent;
+                z-index: 3;
+            }
+        }
+
+    }
+}
+@keyframes cam_move{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-7px);
+    }
+    50%{
+        transform: translateY(-14px);
+    }
+    75%{
+        transform: translateY(-7px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
