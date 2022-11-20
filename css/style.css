@@ -1,13 +1,48 @@
 .above_header {
-  text-align: center;
-  padding: 10px 0;
   background: #282624;
+  overflow-x: hidden;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.above_header p {
+  text-align: center;
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
   color: #DEDEDE;
+  -webkit-animation: search_new_peop 14s linear infinite;
+          animation: search_new_peop 14s linear infinite;
 }
 
+@-webkit-keyframes search_new_peop {
+  0% {
+    -webkit-transform: translateX(180%);
+            transform: translateX(180%);
+  }
+  100% {
+    -webkit-transform: translateX(-180%);
+            transform: translateX(-180%);
+  }
+}
+
+@keyframes search_new_peop {
+  0% {
+    -webkit-transform: translateX(180%);
+            transform: translateX(180%);
+  }
+  100% {
+    -webkit-transform: translateX(-180%);
+            transform: translateX(-180%);
+  }
+}
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,12 +484,17 @@ header .nav_bar a:hover::before {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.under_header .cam_block img {
+.under_header .cam_block .cam img:first-child {
+  margin: 0 auto;
   width: 90%;
-  position: relative;
   z-index: 2;
   -webkit-animation: cam_move 3s linear infinite;
           animation: cam_move 3s linear infinite;
+  position: relative;
+}
+.under_header .cam_block .cam img:nth-child(2) {
+  position: absolute;
+  bottom: -10%;
 }
 .under_header .cam_block p {
   cursor: default;
@@ -553,8 +593,13 @@ header .nav_bar a:hover::before {
   .under_header .orange_trapezoid {
     width: 840px;
   }
-  .under_header .cam_block img {
-    width: 50%;
+  .under_header .cam_block .cam img:first-child {
+    width: 70%;
+  }
+  .under_header .cam_block .cam img:nth-child(2) {
+    width: 70%;
+    bottom: -5%;
+    right: 15%;
   }
   .under_header .cam_block p {
     font-size: 102px;
@@ -569,8 +614,13 @@ header .nav_bar a:hover::before {
   .under_header .orange_trapezoid {
     width: 840px;
   }
-  .under_header .cam_block img {
-    width: 50%;
+  .under_header .cam_block .cam img:first-child {
+    width: 65%;
+  }
+  .under_header .cam_block .cam img:nth-child(2) {
+    width: 70%;
+    bottom: -3%;
+    right: 18%;
   }
   .under_header .cam_block p {
     font-size: 102px;
@@ -596,8 +646,13 @@ header .nav_bar a:hover::before {
   .under_header .orange_trapezoid {
     width: 540px;
   }
-  .under_header .cam_block img {
+  .under_header .cam_block .cam img:first-child {
     width: 50%;
+  }
+  .under_header .cam_block .cam img:nth-child(2) {
+    width: 60%;
+    bottom: -3%;
+    right: 24%;
   }
   .under_header .cam_block p {
     font-size: 92px;

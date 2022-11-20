@@ -106,7 +106,7 @@ button:focus {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #F9C075;
+    background-color: rgb(0, 210, 255, .5);
 }
 
 html, body{

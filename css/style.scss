@@ -6,13 +6,23 @@
 }
 
 .above_header{
-    text-align: center;
-    padding: 10px 0;
     background: #282624;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    color: #DEDEDE;
+    overflow-x: hidden;
+    padding: 10px 0;
+    @include flex-center(flex, center, center);
+    p{
+        text-align: center;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        color: #DEDEDE;
+        animation: search_new_peop 14s linear infinite;
+    }
+}
+
+@keyframes search_new_peop{
+    0%{transform: translateX(180%)}
+    100%{transform: translateX(-180%)}
 }
 
 header{
@@ -245,11 +255,20 @@ header{
         margin: 0 auto;
         @include flex-center(flex, center, center);
         flex-direction: column;
-        img{
-            width: 90%;
-            position: relative;
-            z-index: 2;
-            animation: cam_move 3s linear infinite;
+        .cam{        
+            img{
+                &:first-child{
+                    margin: 0 auto;
+                    width: 90%;
+                    z-index: 2;
+                    animation: cam_move 3s linear infinite;
+                    position: relative;
+                }
+                &:nth-child(2){
+                    position: absolute;
+                    bottom: -10%;
+                }
+            }
         }
         p{
             cursor: default;
@@ -319,8 +338,17 @@ header{
             width: 840px;
         }
         .cam_block{
-            img{
-                width: 50%;
+            .cam{        
+                img{
+                    &:first-child{
+                        width: 70%;
+                    }
+                    &:nth-child(2){
+                        width: 70%;
+                        bottom: -5%;
+                        right: 15%;
+                    }
+                }
             }
             p{
                 font-size: 102px;
@@ -346,14 +374,22 @@ header{
             width: 840px;
         }
         .cam_block{
-            img{
-                width: 50%;
+            .cam{        
+                img{
+                    &:first-child{
+                        width: 65%;
+                    }
+                    &:nth-child(2){
+                        width: 70%;
+                        bottom: -3%;
+                        right: 18%;
+                    }
+                }
             }
             p{
                 font-size: 102px;
                 top: 40%;
             }
-    
         }
     }
 
@@ -388,8 +424,17 @@ header{
             width: 540px;
         }
         .cam_block{
-            img{
-                width: 50%;
+            .cam{        
+                img{
+                    &:first-child{
+                        width: 50%;
+                    }
+                    &:nth-child(2){
+                        width: 60%;
+                        bottom: -3%;
+                        right: 24%;
+                    }
+                }
             }
             p{
                 font-size: 92px;
