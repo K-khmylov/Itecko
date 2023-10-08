@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Ubuntu&display=swap');
 
 *,
 *::before,
@@ -38,7 +38,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    color: #000;
+    color: #3A424F;
 }
 
 h1, h1, h3, h4, h5, h6{
@@ -54,6 +54,9 @@ h1, h1, h3, h4, h5, h6{
 a{
     text-decoration: none;
     color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 img {
@@ -106,27 +109,35 @@ button:focus {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #F9C075;
+    background-color: rgb(0, 210, 255, .5);
 }
 
 html, body{
     scrollbar-color:  rgba(0, 0, 0, 0.2) transparent;
     scrollbar-width: 8px;
-    background-color: #FFFFFF;
+    /* transition: all .2s linear; */
 }
+/* body{
+    width: 100vw;
+    height: 100vh;
+} */
 
 *, html{
     transition: all .2s linear;
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
-html{
+/* html{
     overflow-x: hidden;
-}
+} */
 
 body{
     overflow-x: hidden;
+    transition: all .2s linear;
+    background: #F7F7F7;
 }
 
 input::-webkit-input-placeholder { color: #604B83; }
@@ -150,11 +161,11 @@ input, select{
 textarea{
     resize: none;
     outline: none;
-	-moz-appearance: none;
+	/* -moz-appearance: none; */
 }
 
 .wrapper{
-    max-width: 1202px;
+    max-width: 1362px;
     padding: 0 16px;
     margin: 0 auto;
 }

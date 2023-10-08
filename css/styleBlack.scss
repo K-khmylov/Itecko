@@ -1,0 +1,390 @@
+.black_mode{
+    background: #181A1C;
+    header{
+        .header_first{
+            background-color: #141517;
+            border-bottom-color: #000;
+            .above_header{
+                div{
+                    p{
+                        color: #B5B5B5;
+                    }
+                }
+                p{
+                    color: #8D8D8D;
+                }
+            }
+        }
+        .header_second{
+            background-color: #141517;
+            .logo{
+                span{
+                    svg{
+                        path{
+                           &:nth-child(2){
+                            fill: #ECECEC;
+                           }
+                        }
+                    }
+                }
+                .itecko_animation{
+                    svg{
+                        path{
+                            fill: #ECECEC;
+                        }
+                        &:first-child{
+                            path{
+                                &:nth-child(2){
+                                    fill: #01B0FF;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    .itecko_animation{
+                        svg{
+                            &:nth-child(1){
+                                path{
+                                    &:nth-child(1){
+                                        animation-name: itecko_path1_black;
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                path{
+                                    animation-name: itecko_path2_black;
+                                    animation-duration: .1s;
+                                }
+                            }
+                            &:nth-child(3){
+                                path{
+                                    animation-name: itecko_path3_black;
+                                    animation-duration: .2s;
+                                }
+                            }
+                            &:nth-child(4){
+                                path{
+                                    animation-name: itecko_path4_black;
+                                    animation-duration: .3s;
+                                }
+                            }
+                            &:nth-child(5){
+                                path{
+                                    animation-name: itecko_path5_black;
+                                    animation-duration: .4s;
+                                }
+                            }
+                            &:nth-child(6){
+                                path{
+                                    animation-name: itecko_path6_black;
+                                    animation-duration: .5s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .nav_bar{
+                li{
+                    &:hover{
+                        a{
+                            color: white;
+                        }
+                    } 
+                    .button_black_mode{
+                        path{
+                            stroke: #8d8d8d;
+                        }
+                        &:hover{
+                            path{
+                                stroke: #00D2FF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .under_header{
+        background-image: url(../assets/under_header/bg_black.webp);
+        .orange_trapezoid{
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), linear-gradient(99.55deg, #00D2FF 2.75%, #3A7BD5 101.45%);
+        }
+        .cam_block{
+            p{
+                color: #ECECEC;
+                &:nth-child(3){
+                    -webkit-text-stroke: 2px #ECECEC;
+                }
+            }
+        }
+    }
+    .event_block_container{
+        background-image: url(../assets/event_block/bg_black.png);
+    }
+    .stud_life_block{
+        background-color: #141517;
+        .stud_life{
+            p{
+                &:first-child{
+                    color: #ECECEC;
+                }
+                &:nth-child(2){
+                    color: #B5B5B5;
+                }
+            }
+        }
+    }
+    .video_wrapper{
+        .blur{
+            background: linear-gradient(180deg, rgba(24, 26, 28, 0.83) 0%, #181A1C 100%);
+        }
+        .our_team{
+            border-bottom: 1px solid #181A1C;
+        }
+        .wrapper{
+            .who_are_we{
+                .first{
+                    .girl_container2{
+                        .bg_block{
+                            border: unset;
+            
+                        }
+                    }
+                    .spec_inf{
+                        background: #141517;
+                        svg{
+                            background: rgba(1, 176, 255, 0.15);
+                        }
+                        p{
+                            &:nth-child(2){
+                                color: #ECECEC;
+
+                            }
+                        }
+                    }
+                }
+                .second{
+                    width: 650px;
+                    p{
+                        &:first-child{
+                            color: #01B0FF;
+                        }
+                        &:nth-child(3){
+                            color: #B5B5B5;
+                        }
+                    }
+                    h1{
+                        color: #ECECEC;
+                    }
+                }
+            }
+        }
+    }
+    .itecko_statistic{
+        .position{
+            p{
+                color: #ECECEC;
+            }
+        }
+    } 
+    .gallery{
+        .wrapper{
+            .swiper{
+                .swiper-wrapper{
+                    filter: brightness(60%);
+                }
+            }
+        }
+    }
+    .what_can_we_give{
+        h2{
+           color: #ECECEC;
+        }
+        .what_txt{
+            color: #B5B5B5;
+        }
+        .card_container{
+            .card{
+                background: #141517;
+                border: 3px solid #141517;
+                &:hover{
+                    box-shadow: 4px 4px 24px rgb(173 192 221 / 20%);
+                }
+                p{
+                    &:nth-child(2){
+                        color: #ECECEC;
+                    }
+                    &:nth-child(3){
+                        color: #8D8D8D;
+                    }
+                }
+            }
+        }
+    } 
+    .work{
+        .work_block{
+            .first{
+                p{
+                    &:nth-child(2){
+                        color: #ECECEC;
+                    }
+                    &:nth-child(3){
+                        color: #B5B5B5;
+                    }
+                }
+            }
+            .second{
+                .second_container{
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), linear-gradient(99.55deg, #00C6FF 2.75%, #0072FF 101.45%);
+                    border: unset;
+                }
+            }
+        }
+    }
+    .become_one_of_us{
+        background: #141517;
+        .become_block{
+            p{
+                &:first-child{
+                    color: #ECECEC;
+                }
+                &:nth-child(2){
+                    color: #B5B5B5;
+                }
+            }
+        }
+    }
+    .wrapper{
+        h6{
+            color: #ECECEC;
+        }
+        .vacance_block{
+            .our_vacances{
+                .vacance_tab{
+                    background-color: #141517;
+                    p{
+                        color: #B5B5B5;
+                    }
+                    &.have{
+                        p{
+                            color: #959595;
+                        }
+                    }
+                    &:hover{
+                        box-shadow: 4px 4px 24px rgb(173 192 221 / 20%);
+                    }
+                }      
+            }
+        }
+    }
+    // .change_bg{
+    //     background-color: #141517;
+    // }
+    .wrapper_vacance{
+        background-color: #141517;
+        .wrapper{
+            .vacance_block{
+                .block_txt{
+                    p{
+                        &:first-child{
+                            color: #ECECEC;
+                        }
+                        &:nth-child(2){
+                            color: #B5B5B5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .blue_block{
+        .faq{
+            .first{
+                .questions_photos{
+                    div{
+                        &:nth-child(1){
+                            background-image: url(../assets/faq/first_cloud_black.svg);
+                        }
+                    }
+                }
+            }
+        }
+        .contanct_us{
+            background-color: #141517;
+            p{
+                &:nth-child(2){
+                    color: #ECECEC;
+                }
+            }
+        }
+    }
+}
+
+@keyframes itecko_path1_black{
+    0%{
+        fill: #ECECEC;
+    }
+    50%{
+        fill: #00D2FF;
+    }
+    100%{
+        fill: #ECECEC;
+    }
+}
+@keyframes itecko_path2_black{
+    0%{
+        fill: #ECECEC;
+    }
+    50%{
+        fill: #00D2FF;
+    }
+    100%{
+        fill: #ECECEC;
+    }
+}
+@keyframes itecko_path3_black{
+    0%{
+        fill: #ECECEC;
+    }
+    50%{
+        fill: #00D2FF;
+    }
+    100%{
+        fill: #ECECEC;
+    }
+}
+@keyframes itecko_path4_black{
+    0%{
+        fill: #ECECEC;
+    }
+    50%{
+        fill: #00D2FF;
+    }
+    100%{
+        fill: #ECECEC;
+    }
+}
+@keyframes itecko_path5_black{
+    0%{
+        fill: #ECECEC;
+    }
+    50%{
+        fill: #00D2FF;
+    }
+    100%{
+        fill: #ECECEC;
+    }
+}
+@keyframes itecko_path6_black{
+    0%{
+        fill: #ECECEC;
+    }
+    50%{
+        fill: #00D2FF;
+    }
+    100%{
+        fill: #ECECEC;
+    }
+}
