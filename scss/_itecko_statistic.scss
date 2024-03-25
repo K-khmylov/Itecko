@@ -1,0 +1,194 @@
+@import '../scss/_mixin';
+
+.itecko_statistic{
+    @include flex-center(flex, center, center);
+    margin: 200px auto;
+    .position{
+        text-align: center;
+        cursor: default;
+        padding: 32px 34px;
+        transition: box-shadow .2s linear;
+        // transition: border .2s linear;
+        span{
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 55px;
+            color: #01B0FF;
+            transition: text-shadow .2s linear;
+            pointer-events: none;
+        }
+        p{
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            color: #2D343F;
+            margin-top: 12px;
+            pointer-events: none;
+        }
+        &:last-child{
+            border-right: 2px solid transparent;
+        }
+        &:not(:last-child){
+            border-right: 2px solid #DFDFDF;
+        }
+        &:hover{
+            box-shadow: 4px 4px 24px rgba(173, 192, 221, 0.2);
+            span{
+                text-shadow: 0px 5px 25px rgba(1, 176, 255, 0.36);
+            }
+            // border-right: 2px solid transparent;
+        }
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 8000px){    
+
+}
+@media (min-width: 1200px) and (max-width: 1299px){
+
+}
+@media (min-width: 1024px) and (max-width: 1200px){
+     
+}
+@media (min-width: 894px) and (max-width: 1023px){
+}
+@media (min-width: 768px) and (max-width: 893px){
+    .itecko_statistic{
+        margin-top: 450px;
+        .position{
+            span{
+                font-size: 51px;
+            }
+            p{
+                font-size: 23px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 595px) and (max-width:767px){
+    .itecko_statistic{
+        margin-top: 500px;
+        flex-wrap: wrap;
+        .position{
+            width: 50%;
+            &:not(:last-child){
+                border:unset
+            }
+            &:first-child{
+                border-left: 2px solid #DFDFDF;
+            }
+            &:nth-child(2){
+                border-top: 2px solid #DFDFDF;
+            }
+            &:nth-child(3){
+                border-left: 2px solid #DFDFDF;
+                border-top: 2px solid #DFDFDF;
+            }
+            &:last-child{
+                order: -1;
+            }
+        }
+    }
+}
+
+@media (425px <= width <=594px){
+    .itecko_statistic{
+        margin-top: 600px;
+        flex-wrap: wrap;
+        .position{
+            width: 50%;
+            &:not(:last-child){
+                border:unset
+            }
+            &:first-child{
+                border-left: 2px solid #DFDFDF;
+            }
+            &:nth-child(2){
+                border-top: 2px solid #DFDFDF;
+            }
+            &:nth-child(3){
+                border-left: 2px solid #DFDFDF;
+                border-top: 2px solid #DFDFDF;
+            }
+            &:last-child{
+                order: -1;
+            }
+            span{
+                font-size: 46px;
+            }
+        }
+    }    
+}
+
+@media(min-width: 375px) and (max-width: 424px){
+    .itecko_statistic{
+        margin: 100px 0;
+        margin-top: 500px;
+        flex-wrap: wrap;
+        .position{
+            width: 50%;
+            &:not(:last-child){
+                border:unset
+            }
+            &:first-child{
+                border-left: 2px solid #DFDFDF;
+            }
+            &:nth-child(2){
+                border-top: 2px solid #DFDFDF;
+            }
+            &:nth-child(3){
+                border-left: 2px solid #DFDFDF;
+                border-top: 2px solid #DFDFDF;
+            }
+            &:last-child{
+                order: -1;
+            }
+            span{
+                // font-size: 36px;
+                font-size: 38px;
+                line-height: normal;
+            }
+            p{
+                // font-size: 16px;
+                font-size: 20px;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+@media (320px <= width <= 374px){
+    .itecko_statistic{
+        margin-top: 0;
+        flex-wrap: wrap;
+        .position{
+            width: 50%;
+            &:not(:last-child){
+                border:unset
+            }
+            &:first-child{
+                border-left: 2px solid #DFDFDF;
+            }
+            &:nth-child(2){
+                border-top: 2px solid #DFDFDF;
+            }
+            &:nth-child(3){
+                border-left: 2px solid #DFDFDF;
+                border-top: 2px solid #DFDFDF;
+            }
+            &:last-child{
+                order: -1;
+            }
+            p{
+                font-size: 14px;
+                line-height: 18px;
+            }
+            span{
+                font-size: 28px;
+            }
+        }
+    }
+}

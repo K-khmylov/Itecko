@@ -1,0 +1,195 @@
+.itecko_statistic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 200px auto;
+}
+.itecko_statistic .position {
+  text-align: center;
+  cursor: default;
+  padding: 32px 34px;
+  -webkit-transition: -webkit-box-shadow 0.2s linear;
+  transition: -webkit-box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+}
+.itecko_statistic .position span {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 55px;
+  color: #01B0FF;
+  -webkit-transition: text-shadow 0.2s linear;
+  transition: text-shadow 0.2s linear;
+  pointer-events: none;
+}
+.itecko_statistic .position p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2D343F;
+  margin-top: 12px;
+  pointer-events: none;
+}
+.itecko_statistic .position:last-child {
+  border-right: 2px solid transparent;
+}
+.itecko_statistic .position:not(:last-child) {
+  border-right: 2px solid #DFDFDF;
+}
+.itecko_statistic .position:hover {
+  -webkit-box-shadow: 4px 4px 24px rgba(173, 192, 221, 0.2);
+          box-shadow: 4px 4px 24px rgba(173, 192, 221, 0.2);
+}
+.itecko_statistic .position:hover span {
+  text-shadow: 0px 5px 25px rgba(1, 176, 255, 0.36);
+}
+
+@media (min-width: 768px) and (max-width: 893px) {
+  .itecko_statistic {
+    margin-top: 450px;
+  }
+  .itecko_statistic .position span {
+    font-size: 51px;
+  }
+  .itecko_statistic .position p {
+    font-size: 23px;
+  }
+}
+@media (min-width: 595px) and (max-width: 767px) {
+  .itecko_statistic {
+    margin-top: 500px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .itecko_statistic .position {
+    width: 50%;
+  }
+  .itecko_statistic .position:not(:last-child) {
+    border: unset;
+  }
+  .itecko_statistic .position:first-child {
+    border-left: 2px solid #DFDFDF;
+  }
+  .itecko_statistic .position:nth-child(2) {
+    border-top: 2px solid #DFDFDF;
+  }
+  .itecko_statistic .position:nth-child(3) {
+    border-left: 2px solid #DFDFDF;
+    border-top: 2px solid #DFDFDF;
+  }
+  .itecko_statistic .position:last-child {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+@media (425px <= width <= 594px) {
+  .itecko_statistic {
+    margin-top: 600px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .itecko_statistic .position {
+    width: 50%;
+  }
+  .itecko_statistic .position:not(:last-child) {
+    border: unset;
+  }
+  .itecko_statistic .position:first-child {
+    border-left: 2px solid #DFDFDF;
+  }
+  .itecko_statistic .position:nth-child(2) {
+    border-top: 2px solid #DFDFDF;
+  }
+  .itecko_statistic .position:nth-child(3) {
+    border-left: 2px solid #DFDFDF;
+    border-top: 2px solid #DFDFDF;
+  }
+  .itecko_statistic .position:last-child {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .itecko_statistic .position span {
+    font-size: 46px;
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  .itecko_statistic {
+    margin: 100px 0;
+    margin-top: 500px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .itecko_statistic .position {
+    width: 50%;
+  }
+  .itecko_statistic .position:not(:last-child) {
+    border: unset;
+  }
+  .itecko_statistic .position:first-child {
+    border-left: 2px solid #DFDFDF;
+  }
+  .itecko_statistic .position:nth-child(2) {
+    border-top: 2px solid #DFDFDF;
+  }
+  .itecko_statistic .position:nth-child(3) {
+    border-left: 2px solid #DFDFDF;
+    border-top: 2px solid #DFDFDF;
+  }
+  .itecko_statistic .position:last-child {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .itecko_statistic .position span {
+    font-size: 38px;
+    line-height: normal;
+  }
+  .itecko_statistic .position p {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+@media (320px <= width <= 374px) {
+  .itecko_statistic {
+    margin-top: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .itecko_statistic .position {
+    width: 50%;
+  }
+  .itecko_statistic .position:not(:last-child) {
+    border: unset;
+  }
+  .itecko_statistic .position:first-child {
+    border-left: 2px solid #DFDFDF;
+  }
+  .itecko_statistic .position:nth-child(2) {
+    border-top: 2px solid #DFDFDF;
+  }
+  .itecko_statistic .position:nth-child(3) {
+    border-left: 2px solid #DFDFDF;
+    border-top: 2px solid #DFDFDF;
+  }
+  .itecko_statistic .position:last-child {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .itecko_statistic .position p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .itecko_statistic .position span {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,171 @@
+@import '../scss/_mixin';
+
+.what_can_we_give{
+    margin-top: 196px;
+    margin-bottom: 200px;
+    text-align: center;
+    h2{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .what_txt{
+        font-size: 22px;
+        line-height: 25px;
+        margin: 16px auto 56px auto;
+        width: 788px;
+        // text-align: center;
+    }
+    .card_container{
+        overflow: unset;
+        @include flex-center(flex, baseline, space-between);
+        // column-gap: 70px;
+        .card{
+            width: 402px;    
+            height: 402px;
+            padding: 72px 32px;
+            padding-bottom: unset;
+            background-color: #FFF;
+            border: 3px solid #FFFFFF;
+            text-align: left;
+            border-radius: 4px;
+            // transition: border .2s linear 0;
+            // transition: transform .2s linear;
+            // transition: all .2s linear;
+            p{
+                &:nth-child(2){
+                    margin: 22px 0 32px 0;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 32px;
+                }
+                &:nth-child(3){
+                    font-family: "Ubuntu", sans-serif;
+                    font-size: 21px;
+                    line-height: 23px;
+                    width: 95%;
+                }
+            }
+            &:hover{
+                border: 2px solid #01B0FF;
+                transform: scale(1.1, 1.1);
+            }
+        }
+        // &:hover {
+        //     .card{
+        //         &:not(:hover){
+        //             filter: blur(10px);
+        //             transform: scale(0.9, 0.9);
+        //         }
+        //     }
+
+        // }
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 8000px){    
+
+}
+@media (min-width: 1200px) and (max-width: 1299px){
+
+}
+@media (min-width: 1024px) and (max-width: 1200px){
+    .what_can_we_give{
+        .card_container{
+            .card{
+                width: 304px;
+                p{
+                    &:nth-child(3){
+                        font-size: 20px;
+                        line-height: 22px;
+                        text-align: justify;
+                        width: unset;
+                    }
+                }
+            }
+        }
+    }     
+}
+
+@media (425px <= width <= 893px){
+    .what_can_we_give{
+        .card_container{
+            flex-wrap: wrap-reverse;
+            row-gap: 40px;
+            column-gap: 40px;
+            justify-content: center;
+            // .card{
+            //     width: 304px;
+            //     p{
+            //         &:nth-child(3){
+            //             font-size: 20px;
+            //             line-height: 22px;
+            //             text-align: justify;
+            //             width: unset;
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+
+// @media (min-width: 595px) and (max-width: 893px){
+//     .what_can_we_give{
+//         .what_txt{
+//             width: unset;
+//         }
+//     }
+
+// }
+
+@media (425px <= width <= 893px){
+    .what_can_we_give{
+        .what_txt{
+            width: unset;
+        }
+    }
+}
+
+// @media(min-width: 375px) and (max-width: 424px){
+//     .what_can_we_give{
+//         margin-top: 0;
+//         h2{
+//             font-size: 28px;
+//             line-height: normal;
+//         }
+//         .what_txt{
+//             width: unset;
+//             font-size: 18px;
+//             line-height: normal;
+//         }
+//     }
+// }
+
+@media (320px <= width <= 424px){
+    .what_can_we_give{
+        h2{
+            font-size: 28px;
+        }
+        .what_txt{
+            width: unset;
+            font-size: 18px;
+        }
+        .card_container{
+            flex-wrap: wrap-reverse;
+            row-gap: 40px;
+            column-gap: 40px;
+            justify-content: center;
+            
+            .card{
+                p{
+                    &:nth-child(2){
+                        font-size: 24px;
+                    }
+                    &:nth-child(3){
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

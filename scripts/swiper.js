@@ -7,20 +7,36 @@ const swiper1 = new Swiper('.swiper1', {
     direction: 'horizontal',
     loop: true,
     speed: 2200,
-  
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
 
     breakpoints: {
-        320: {
+        894: {
           slidesPerView: 4,
           slidesPerGroup: 4,
-          spaceBetween: 24,
+          spaceBetween: 16,
           navigation: {
             enabled: false,
           }
+        },
+        595: {
+          slidesPerView: 2.1,
+          slidesPerGroup: 3,
+          spaceBetween: 12,
+          navigation: {
+            enabled: false,
+          }
+        },
+        320: {
+          slidesPerView: 1.5,
+          // slidesPerGroup: 2,
+          spaceBetween: 12,
+          navigation: {
+            enabled: false,
+          },
         }
 
         // 480: {
@@ -48,14 +64,30 @@ const swiper2 = new Swiper('.swiper2', {
     },
 
     breakpoints: {
-        320: {
-          slidesPerView: 4,
-          slidesPerGroup: 4,
-          spaceBetween: 24,
-          navigation: {
-            enabled: false,
-          }
+      894: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 16,
+        navigation: {
+          enabled: false,
         }
+      },
+      595: {
+        slidesPerView: 2.1,
+        slidesPerGroup: 3,
+        spaceBetween: 16,
+        navigation: {
+          enabled: false,
+        }
+      },
+      320: {
+        slidesPerView: 1.5,
+          // slidesPerGroup: 3,
+          spaceBetween: 12,
+        navigation: {
+          enabled: false,
+        }
+      }
 
         // 480: {
         //   slidesPerView: 3,
@@ -82,10 +114,26 @@ const swiper3 = new Swiper('.swiper3', {
   },
 
   breakpoints: {
-      320: {
+      894: {
         slidesPerView: 4,
         slidesPerGroup: 4,
-        spaceBetween: 24,
+        spaceBetween: 16,
+        navigation: {
+          enabled: false,
+        }
+      },
+      595: {
+        slidesPerView: 2.1,
+        slidesPerGroup: 3,
+        spaceBetween: 16,
+        navigation: {
+          enabled: false,
+        }
+      },
+      320: {
+        slidesPerView: 1.5,
+          // slidesPerGroup: 3,
+          spaceBetween: 12,
         navigation: {
           enabled: false,
         }

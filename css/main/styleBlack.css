@@ -1,0 +1,337 @@
+.black_mode {
+  background: #181A1C;
+}
+.black_mode header .header_first {
+  background-color: #141517;
+  border-bottom-color: #000;
+}
+.black_mode header .header_first .above_header div p {
+  color: #B5B5B5;
+}
+.black_mode header .header_first .above_header p {
+  color: #8D8D8D;
+}
+.black_mode header .header_second {
+  background-color: #141517;
+}
+.black_mode header .header_second .logo span svg path:nth-child(2) {
+  fill: #ECECEC;
+}
+.black_mode header .header_second .logo .itecko_animation svg path {
+  fill: #ECECEC;
+}
+.black_mode header .header_second .logo .itecko_animation svg:first-child path:nth-child(2) {
+  fill: #01B0FF;
+}
+.black_mode header .header_second .logo:hover .itecko_animation svg:nth-child(1) path:nth-child(1) {
+  -webkit-animation-name: itecko_path1_black;
+          animation-name: itecko_path1_black;
+}
+.black_mode header .header_second .logo:hover .itecko_animation svg:nth-child(2) path {
+  -webkit-animation-name: itecko_path2_black;
+          animation-name: itecko_path2_black;
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
+}
+.black_mode header .header_second .logo:hover .itecko_animation svg:nth-child(3) path {
+  -webkit-animation-name: itecko_path3_black;
+          animation-name: itecko_path3_black;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+}
+.black_mode header .header_second .logo:hover .itecko_animation svg:nth-child(4) path {
+  -webkit-animation-name: itecko_path4_black;
+          animation-name: itecko_path4_black;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+.black_mode header .header_second .logo:hover .itecko_animation svg:nth-child(5) path {
+  -webkit-animation-name: itecko_path5_black;
+          animation-name: itecko_path5_black;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+.black_mode header .header_second .logo:hover .itecko_animation svg:nth-child(6) path {
+  -webkit-animation-name: itecko_path6_black;
+          animation-name: itecko_path6_black;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+.black_mode header .header_second .nav_bar li:hover a {
+  color: white;
+}
+.black_mode header .header_second .nav_bar li .button_black_mode path {
+  stroke: #8d8d8d;
+}
+.black_mode header .header_second .nav_bar li .button_black_mode:hover path {
+  stroke: #00D2FF;
+}
+.black_mode .under_header {
+  background-image: url(../../assets/under_header/bg_black.webp);
+}
+.black_mode .under_header .orange_trapezoid {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), linear-gradient(99.55deg, #00D2FF 2.75%, #3A7BD5 101.45%);
+}
+.black_mode .under_header .cam_block p {
+  color: #ECECEC;
+}
+.black_mode .under_header .cam_block p:nth-child(3) {
+  -webkit-text-stroke: 2px #ECECEC;
+}
+.black_mode .event_block_container {
+  background-image: url(../../assets/event_block/bg_black.png);
+}
+.black_mode .stud_life_block {
+  background-color: #141517;
+}
+.black_mode .stud_life_block .stud_life p:first-child {
+  color: #ECECEC;
+}
+.black_mode .stud_life_block .stud_life p:nth-child(2) {
+  color: #B5B5B5;
+}
+.black_mode .video_wrapper .blur {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 26, 28, 0.83)), to(#181A1C));
+  background: linear-gradient(180deg, rgba(24, 26, 28, 0.83) 0%, #181A1C 100%);
+}
+.black_mode .video_wrapper .our_team {
+  border-bottom: 1px solid #181A1C;
+}
+.black_mode .video_wrapper .wrapper .who_are_we .first .girl_container2 .bg_block {
+  border: unset;
+}
+.black_mode .video_wrapper .wrapper .who_are_we .first .spec_inf {
+  background: #141517;
+}
+.black_mode .video_wrapper .wrapper .who_are_we .first .spec_inf svg {
+  background: rgba(1, 176, 255, 0.15);
+}
+.black_mode .video_wrapper .wrapper .who_are_we .first .spec_inf p:nth-child(2) {
+  color: #ECECEC;
+}
+.black_mode .video_wrapper .wrapper .who_are_we .second {
+  width: 650px;
+}
+.black_mode .video_wrapper .wrapper .who_are_we .second p:first-child {
+  color: #01B0FF;
+}
+.black_mode .video_wrapper .wrapper .who_are_we .second p:nth-child(3) {
+  color: #B5B5B5;
+}
+.black_mode .video_wrapper .wrapper .who_are_we .second h1 {
+  color: #ECECEC;
+}
+.black_mode .itecko_statistic .position p {
+  color: #ECECEC;
+}
+.black_mode .gallery .wrapper .swiper .swiper-wrapper {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+.black_mode .what_can_we_give h2 {
+  color: #ECECEC;
+}
+.black_mode .what_can_we_give .what_txt {
+  color: #B5B5B5;
+}
+.black_mode .what_can_we_give .card_container .card {
+  background: #141517;
+  border: 3px solid #141517;
+}
+.black_mode .what_can_we_give .card_container .card:hover {
+  -webkit-box-shadow: 4px 4px 24px rgba(173, 192, 221, 0.2);
+          box-shadow: 4px 4px 24px rgba(173, 192, 221, 0.2);
+}
+.black_mode .what_can_we_give .card_container .card p:nth-child(2) {
+  color: #ECECEC;
+}
+.black_mode .what_can_we_give .card_container .card p:nth-child(3) {
+  color: #8D8D8D;
+}
+.black_mode .work .work_block .first p:nth-child(2) {
+  color: #ECECEC;
+}
+.black_mode .work .work_block .first p:nth-child(3) {
+  color: #B5B5B5;
+}
+.black_mode .work .work_block .second .second_container {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), linear-gradient(99.55deg, #00C6FF 2.75%, #0072FF 101.45%);
+  border: unset;
+}
+.black_mode .become_one_of_us {
+  background: #141517;
+}
+.black_mode .become_one_of_us .become_block p:first-child {
+  color: #ECECEC;
+}
+.black_mode .become_one_of_us .become_block p:nth-child(2) {
+  color: #B5B5B5;
+}
+.black_mode .wrapper h6 {
+  color: #ECECEC;
+}
+.black_mode .wrapper .vacance_block .our_vacances .vacance_tab {
+  background-color: #141517;
+}
+.black_mode .wrapper .vacance_block .our_vacances .vacance_tab p {
+  color: #B5B5B5;
+}
+.black_mode .wrapper .vacance_block .our_vacances .vacance_tab.have p {
+  color: #959595;
+}
+.black_mode .wrapper .vacance_block .our_vacances .vacance_tab:hover {
+  -webkit-box-shadow: 4px 4px 24px rgba(173, 192, 221, 0.2);
+          box-shadow: 4px 4px 24px rgba(173, 192, 221, 0.2);
+}
+.black_mode .wrapper_vacance {
+  background-color: #141517;
+}
+.black_mode .wrapper_vacance .wrapper .vacance_block .block_txt p:first-child {
+  color: #ECECEC;
+}
+.black_mode .wrapper_vacance .wrapper .vacance_block .block_txt p:nth-child(2) {
+  color: #B5B5B5;
+}
+.black_mode .blue_block .faq .first .questions_photos div:nth-child(1) {
+  background-image: url(../../assets/faq/first_cloud_black.svg);
+}
+.black_mode .blue_block .contanct_us {
+  background-color: #141517;
+}
+.black_mode .blue_block .contanct_us p:nth-child(2) {
+  color: #ECECEC;
+}
+
+@-webkit-keyframes itecko_path1_black {
+  0% {
+    fill: #ECECEC;
+  }
+  50% {
+    fill: #00D2FF;
+  }
+  100% {
+    fill: #ECECEC;
+  }
+}
+
+@keyframes itecko_path1_black {
+  0% {
+    fill: #ECECEC;
+  }
+  50% {
+    fill: #00D2FF;
+  }
+  100% {
+    fill: #ECECEC;
+  }
+}
+@-webkit-keyframes itecko_path2_black {
+  0% {
+    fill: #ECECEC;
+  }
+  50% {
+    fill: #00D2FF;
+  }
+  100% {
+    fill: #ECECEC;
+  }
+}
+@keyframes itecko_path2_black {
+  0% {
+    fill: #ECECEC;
+  }
+  50% {
+    fill: #00D2FF;
+  }
+  100% {
+    fill: #ECECEC;
+  }
+}
+@-webkit-keyframes itecko_path3_black {
+  0% {
+    fill: #ECECEC;
+  }
+  50% {
+    fill: #00D2FF;
+  }
+  100% {
+    fill: #ECECEC;
+  }
+}
+@keyframes itecko_path3_black {
+  0% {
+    fill: #ECECEC;
+  }
+  50% {
+    fill: #00D2FF;
+  }
+  100% {
+    fill: #ECECEC;
+  }
+}
+@-webkit-keyframes itecko_path4_black {
+  0% {
+    fill: #ECECEC;
+  }
+  50% {
+    fill: #00D2FF;
+  }
+  100% {
+    fill: #ECECEC;
+  }
+}
+@keyframes itecko_path4_black {
+  0% {
+    fill: #ECECEC;
+  }
+  50% {
+    fill: #00D2FF;
+  }
+  100% {
+    fill: #ECECEC;
+  }
+}
+@-webkit-keyframes itecko_path5_black {
+  0% {
+    fill: #ECECEC;
+  }
+  50% {
+    fill: #00D2FF;
+  }
+  100% {
+    fill: #ECECEC;
+  }
+}
+@keyframes itecko_path5_black {
+  0% {
+    fill: #ECECEC;
+  }
+  50% {
+    fill: #00D2FF;
+  }
+  100% {
+    fill: #ECECEC;
+  }
+}
+@-webkit-keyframes itecko_path6_black {
+  0% {
+    fill: #ECECEC;
+  }
+  50% {
+    fill: #00D2FF;
+  }
+  100% {
+    fill: #ECECEC;
+  }
+}
+@keyframes itecko_path6_black {
+  0% {
+    fill: #ECECEC;
+  }
+  50% {
+    fill: #00D2FF;
+  }
+  100% {
+    fill: #ECECEC;
+  }
+}

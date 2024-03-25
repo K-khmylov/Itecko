@@ -1,0 +1,161 @@
+@import '../scss/_mixin';
+
+.stud_life_block{
+    overflow-x: hidden;
+    background-color: white;
+    padding: 162px 0 148px 0;
+    .stud_life{
+        @include flex-center(flex, center, center);
+        p{
+            &:first-child{
+                font-weight: 700;
+                font-size: 55px;
+                line-height: 67px;
+            }
+            &:nth-child(2){
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 22px;
+                line-height: 25px;
+                margin-left: 184px;
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 8000px){    
+
+}
+@media (min-width: 1200px) and (max-width: 1299px){
+
+}
+@media (min-width: 1024px) and (max-width: 1200px){
+    .stud_life_block{
+        .stud_life{
+            p{
+                &:first-child{
+                    width: 113%;
+                    font-size: 50px;
+                    line-height: 62px;
+                }
+                &:nth-child(2){
+                    margin-left: 0;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .stud_life_block{
+        .stud_life{
+            p{
+                &:first-child{
+                    width: 129%;
+                    font-size: 50px;
+                    line-height: 62px;
+                }
+                &:nth-child(2){
+                    margin-left: 0;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 595px) and (max-width: 893px){
+    .stud_life_block{
+        padding: 150px 0;
+        .stud_life{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            row-gap: 30px;
+            p{
+                &:first-child{
+                    width: 129%;
+                    font-size: 50px;
+                    line-height: 62px;
+                }
+                &:nth-child(2){
+                    margin-left: 0;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 425px) and (max-width: 594px){
+    .stud_life_block{
+        padding: 150px 0;
+        .stud_life{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            row-gap: 30px;
+            p{
+                &:first-child{
+                    width: 129%;
+                    font-size: 50px;
+                    line-height: 62px;
+                }
+                &:nth-child(2){
+                    margin-left: 0;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 375px) and (max-width: 424px){
+    .stud_life_block{
+        padding: 36px 0;
+        .stud_life{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            row-gap: 30px;
+            p{
+                &:first-child{
+                    align-self: stretch;
+                    width: 129%;
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                &:nth-child(2){
+                    margin-left: 0;
+                    // text-align: justify;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (320px <= width <= 374px){
+    .stud_life_block{
+        padding: 75px 0;
+        .stud_life{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            row-gap: 30px;
+            p{
+                &:first-child{
+                    width: 129%;
+                    font-size: 36px;
+                    line-height: normal;
+                }
+                &:nth-child(2){
+                    font-size: 18px;
+                    margin-left: 0;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

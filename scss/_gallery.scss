@@ -1,0 +1,105 @@
+.gallery{
+    .wrapper{
+        padding: 0;
+        margin-bottom: 120px;
+        .swiper {
+            // width: 100%;
+          
+            .swiper-wrapper {
+              .swiper-slide {
+                .img_container {
+                  overflow: hidden;
+                  transition: filter 0.1s linear;
+          
+                  &:hover {
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+                      drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                  }
+          
+                  img {
+                    // width: 517px;
+                    width: 100%;
+                    height: inherit;
+                    transition: transform 0.25s linear;
+          
+                    &:hover {
+                      transform: scale(1.1, 1.1);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          
+        .swiper2{
+            margin: 24px 0;
+            .swiper-wrapper{
+                .swiper-slide{
+                    transform: translateX(200px);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 8000px){    
+
+}
+@media (min-width: 1200px) and (max-width: 1299px){
+
+}
+@media (min-width: 1024px) and (max-width: 1200px){
+     
+}
+@media (min-width: 894px) and (max-width: 1023px){
+    .gallery{
+        .wrapper{
+            .swiper2{
+                margin: 16px 0;
+            }
+        }
+    }
+}
+@media (min-width: 595px) and (max-width: 893px){
+    .gallery{
+        .wrapper{
+            .swiper2{
+                margin: 16px 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 425px) and (max-width: 594px){
+    .gallery{
+        .wrapper{
+            .swiper2{
+                margin: 16px 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 375px) and (max-width: 424px){
+    .gallery{
+        margin-bottom: 72px;
+        .wrapper{
+            .swiper2{
+                margin: 12px 0;
+            }
+        }
+    }
+}
+
+@media (320px <= width <= 374px){
+    .gallery{
+        .wrapper{
+            .swiper2{
+                margin: 16px 0;
+            }
+            // .swiper3{
+            //     display: none;
+            // }
+        }
+    }
+}

@@ -1,0 +1,300 @@
+@import '../scss/_mixin';
+
+.wrapper_vacance{
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 94px;
+    padding-top: 100px;
+    background: white;
+    padding-bottom: 260px;
+    .vacance_block{
+        // overflow-x: hidden;
+        .block_txt{
+            margin-bottom: 88px;
+            @include flex-center(flex, center, space-between);
+            p{
+                color: #3A424F;
+                text-align: left;
+                margin-top: 32px;
+                &:first-child{
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 48px;
+                }
+                &:nth-child(2){
+                    font-family: "Ubuntu", sans-serif;
+                    max-width: 650px;
+                    font-size: 22px;
+                    line-height: 25px;
+                }
+            }
+        }
+        .swiper_vacance{
+            width: 100%;
+            height: inherit;
+            .swiper-wrapper{
+                .swiper-slide{
+                    width: unset;
+                    max-width: 405px;
+                    .card{
+                        overflow: hidden;
+                        position: relative;
+                        z-index: 1;
+                        width: 405px;
+                        height: 600px;
+                        padding: 32px;
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+                        box-shadow: 4px 4px 24px rgba(152, 170, 197, 0.21);
+                        border-radius: 4px;
+                        .show{
+                            transition: all .4s ease;
+                            background: rgba(41, 45, 50, 0);
+                            z-index: 3;
+                            position: absolute;
+                            height: 600px;
+                            padding: 32px;
+                            top: 416px;
+                            left: 0;
+                            p{
+                                color: #B5B5B5;
+                                text-align: left;
+                                &:first-child{
+                                    font-family: 'Metropolis', sans-serif;
+                                    font-weight: 600;
+                                    font-size: 44px;
+                                    color: #ECECEC;
+                                }
+                                &:nth-child(2){
+                                    margin: 22px 0 32px 0;
+                                    line-height: 18px;
+                                }
+                            }
+                            button{
+                                color: #01B0FF;
+                                font-family: "Ubuntu", sans-serif;
+                                font-size: 16px;
+                                font-weight: 500;
+                                display: none;
+                            }
+                            ul{
+                                list-style-image: url(../../assets/vacances/tik.svg);
+                                margin-left: 30px;
+                                li{
+                                    color: #ECECEC;
+                                    line-height: 18px;
+                                    margin-bottom: 16px;
+                                    &:first-child{
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                            a{
+                                transition: all .3s linear;
+                                position: absolute;
+                                margin: 0 auto;
+                                z-index: 3;
+                                bottom: -42px;
+                                padding: 16px 118px;
+                                background-color: transparent;
+                                color: rgba(0, 198, 255, 1);
+                                font-weight: 600;
+                                font-size: 22px;
+                                line-height: 22px;
+                                border: 3px solid rgba(0, 198, 255, 1);
+                                border-radius: 4px;
+                                // КНОПКА АНИМАЦИЯ
+                                &:hover{
+                                    background: rgba(0, 198, 255, 1);
+                                    box-shadow: 0px 5px 25px rgba(1, 176, 255, 0.36);
+                                    color: white;
+                                }
+                                // &:hover{
+                                //     background: linear-gradient(99.55deg, #00C6FF 2.75%, #0072FF 101.45%);
+                                //     border: 3px solid;
+                                //     box-shadow: 0px 5px 25px rgba(1, 176, 255, 0.36);
+                                //     color: white;
+                                // }
+                            }
+                        }
+                        &:hover{
+                            .show{
+                                top: 0;
+                                background: rgba(41, 45, 50, 0.9);
+                                opacity: 1;
+                                a{
+                                    bottom: 32px;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(1){
+                        .card{
+                            background-image: url(../../assets/vacances/fotograf.png);
+                        }
+                    }
+                    &:nth-child(2){
+                        .card{
+                            background-image: url(../../assets/vacances/kameraman.png);
+                        }
+                    }
+                    &:nth-child(3){
+                        .card{
+                            background-image: url(../../assets/vacances/moderator.png);
+                        }
+                    }
+                    &:nth-child(4){
+                        .card{
+                            background-image: url(../../assets/vacances/marketing.png);
+                        }
+                    }
+                    &:nth-child(5){
+                        .card{
+                            background-image: url(../../assets/vacances/med_manazer.png);
+                        }
+                    }
+                    &:nth-child(6){
+                        .card{
+                            background-image: url(../../assets/vacances/sepc_obor.png);
+                        }
+                    }
+                    &:nth-child(5),
+                    &:nth-child(6){
+                        .show{
+                            top: 382px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 8000px){    
+
+}
+
+@media (min-width: 1200px) and (max-width: 1299px){
+
+}
+
+@media (min-width: 1024px) and (max-width: 1200px){
+    .wrapper_vacance{
+        .vacance_block{
+            .block_txt{
+                p{
+                    &:first-child{
+                        width: 100%;
+                    }
+                    &:nth-child(2){
+                        width: 132%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .wrapper_vacance{
+        .vacance_block{
+            .block_txt{
+                p{
+                    &:first-child{
+                        width: 100%;
+                    }
+                    &:nth-child(2){
+                        width: 90%;
+                        text-align: justify;
+                        margin-top: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 595px) and (max-width: 893px){
+    .wrapper_vacance{
+        .vacance_block{
+            .block_txt{
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                margin-bottom: 36px;
+            }
+        }
+    }
+}
+
+@media (425px <= width <= 594px){
+    .wrapper_vacance{
+        .vacance_block{
+            .block_txt{
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                margin-bottom: 36px;
+            }
+        }
+    }
+}
+
+@media (min-width: 425px) and (max-width: 594px){
+    
+}
+
+@media(min-width: 375px) and (max-width: 424px){
+    
+}
+
+@media (320px <= width <= 424px){
+    .wrapper_vacance{
+        padding-bottom: 36px;
+        .vacance_block{
+            .block_txt{
+                flex-wrap: wrap;
+                p{
+                    &:nth-child(1){
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    &:nth-child(2){
+                        font-size: 18px;
+                    }
+                }
+            }
+            .swiper_vacance{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        max-width: 310px;
+                        .card{
+                            max-width: 310px;
+                            .show{
+                                padding: 17px;
+                                // padding: 0 24px;
+                                top: 405px;
+                                p{
+                                    &:first-child{
+                                        font-size: 28px;
+                                    }
+                                    &:nth-child(2){
+                                        font-size: 16px;
+                                        line-height: normal;
+                                    }
+                                }
+                                button{
+                                    display: block;
+                                    pointer-events: none;
+                                }
+                                a{
+                                    padding: 16px 90px;
+                                    font-size: 20px;                                    ;
+                                }
+                            }
+                        }   
+                    }
+                }
+            }
+        }
+    }
+    
+}

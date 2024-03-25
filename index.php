@@ -14,109 +14,14 @@
     <script src="form_sender/jquery.validate.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script src="form_sender/script.js"></script>
-    <script src="scripts/smooth-scrollbar.js" defer></script> 
-    <script src="scripts/event.js" defer></script>
+     <script src="scripts/smooth-scrollbar.js" defer></script> 
     <script src="scripts/swiper.js" defer></script>
     <script src="scripts/app.js" defer></script>
     <title>itecko</title>
 </head>
 <body>
   
-<header>
-    <div class="header_first">
-        <div class="wrapper">
-            <div class="above_header">
-                <div>
-                    <div class="dot"></div>
-                    <p class="black"><span>LIVESTREAM - </span>Rozhovor s erazmákmi</p>
-                </div>
-                <p>#iteck #erazmus #funiza</p>
-            </div>
-        </div>
-    </div>   
-    <div class="header_second">
-        <div class="wrapper">
-            <a class="logo" href="index.html">
-                <span>
-                    <svg width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.0138 18.3965C29.7052 17.9977 29.7052 16.9998 29.0138 16.601L28.6647 16.3996L15.9665 16.3996L15.9665 25.9217L29.0138 18.3965ZM6.2848 31.5057L1.55369 34.2344C0.862768 34.6329 -0.000488316 34.1343 -0.000488281 33.3367L-0.00048754 16.3996H6.2848L6.2848 31.5057ZM8.8203 30.0433L8.8203 15.1319V13.8641H7.55255L-0.000487429 13.8641L-0.00048723 9.32208L7.55255 9.32208H14.6988H16.3936L24.2687 13.8641L14.6988 13.8641H13.431V15.1319L13.431 27.384L8.8203 30.0433ZM11.9975 6.78657L1.55369 0.762984C0.862769 0.364486 -0.00048686 0.863137 -0.000486895 1.66074L-0.00048712 6.78657L7.55255 6.78657L11.9975 6.78657Z" fill="url(#paint0_linear_496_195)"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7295 31.5032C15.4199 33.3165 18.6611 34.3749 22.1496 34.3749C31.4699 34.3749 39.0255 26.8193 39.0255 17.499C39.0255 8.17872 31.4699 0.623123 22.1496 0.623123C18.6615 0.623123 15.4205 1.68139 12.7303 3.49437L15.8748 5.3099C17.7549 4.34009 19.8883 3.7925 22.1496 3.7925C29.7195 3.7925 35.8561 9.92912 35.8561 17.499C35.8561 25.0689 29.7195 31.2055 22.1496 31.2055C19.888 31.2055 17.7543 30.6578 15.874 29.6877L12.7295 31.5032Z" fill="#2D343F"/>
-                        <defs>
-                        <linearGradient id="paint0_linear_496_195" x1="-3.39677" y1="30.1556" x2="29.9306" y2="35.0603" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#00C6FF"/>
-                        <stop offset="1" stop-color="#0072FF"/>
-                        </linearGradient>
-                        </defs>
-                    </svg>
-                </span>
-                <div class="itecko_animation">
-                    <svg width="5" height="23" viewBox="0 0 5 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.92442 22.2398H0.224731V6.56165H3.92442V22.2398Z" fill="#2D343F"/>
-                        <path d="M4.21522 2.09245C4.21522 3.21448 3.27513 4.21522 2.12277 4.21522C0.940084 4.21522 0 3.21448 0 2.09245C0 0.97041 0.940084 0 2.12277 0C3.27513 0 4.21522 0.97041 4.21522 2.09245Z" fill="#01B0FF"/>
-                    </svg>    
-                    <svg width="8" height="21" viewBox="0 0 8 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.1553 17.1944C5.79213 17.1944 6.36831 16.9518 6.70189 16.6183L7.76328 19.1049C6.88384 19.8631 5.61018 20.3483 4.42749 20.3483C1.81952 20.3483 0 18.4681 0 15.8298V7.36905V4.30619V0H3.60871V4.30619H7.15677V7.36905H3.60871V15.3749C3.60871 16.4363 4.27587 17.1944 5.1553 17.1944Z" fill="#2D343F"/>
-                    </svg>      
-                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.821 9.46149C4.27588 11.6146 5.91344 13.1309 8.15752 13.1309C9.61313 13.1309 11.3417 12.4637 12.2211 11.5539L14.5562 13.98C13.1915 15.4356 10.4622 16.406 8.18784 16.406C3.69969 16.406 0 12.9792 0 8.15751C0 3.45708 3.51774 0 7.97556 0C12.8276 0 15.6479 3.66936 15.6479 9.46149H3.821ZM12.0998 6.64124C11.6752 4.6701 10.3409 3.27513 8.12719 3.27513C6.06507 3.27513 4.39718 4.57912 3.85132 6.64124H12.0998Z" fill="#2D343F"/>
-                    </svg>
-                    <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4546 3.98026L8.24879 5.85887L5.17555 4.05792C2.16358 5.31729 0 8.24964 0 11.5909C0 16.0487 3.85131 19.809 8.36978 19.809C10.8565 19.809 12.9489 18.778 14.4652 17.1707L11.9785 15.0176C11.0991 16.0184 9.76475 16.6552 8.40011 16.6552C5.82246 16.6552 3.66936 14.3505 3.66936 11.5909C3.66936 8.86159 5.82246 6.55686 8.40011 6.55686C9.73442 6.55686 11.0384 7.19369 11.8875 8.13378L14.3742 5.95036C13.5635 5.10654 12.5722 4.42522 11.4546 3.98026Z" fill="#2D343F"/>
-                        <path d="M8.25838 3.64471L3.59056 0.911178L12.9262 0.911179L8.25838 3.64471Z" fill="#2D343F"/>
-                    </svg>    
-                    <svg width="15" height="22" viewBox="0 0 15 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4925 5.51921H14.8594L8.4001 12.5244L14.6471 21.1974H10.3409L5.91343 14.9504L3.69969 17.2854V21.1974H0V0H3.69969V12.9489L10.4925 5.51921Z" fill="#2D343F"/>
-                    </svg> 
-                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8003 8.18783C16.8003 12.6457 12.9489 16.406 8.40015 16.406C3.85135 16.406 0 12.6457 0 8.18783C0 3.73001 3.85135 0 8.40015 0C12.9489 0 16.8003 3.73001 16.8003 8.18783ZM3.60871 8.18783C3.60871 10.9474 5.79217 13.2522 8.40015 13.2522C10.9778 13.2522 13.1612 10.9474 13.1612 8.18783C13.1612 5.45856 10.9778 3.15383 8.40015 3.15383C5.79217 3.15383 3.60871 5.45856 3.60871 8.18783Z" fill="#2D343F"/>
-                    </svg>      
-                </div>
-            </a>
-            <ul class="nav_bar">
-                <li><a href="./pages/about_us.html">Naš tím</a></li>
-                <li><a href="./pages/gallery.html">Galéria</a></li>
-                <!-- <li><a href="#">o nas</a></li> -->
-                <!-- <li><a href="#">Live</a></li> -->
-                <!-- <li><a href="#">
-                    O nás
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.5575 6.43497L9 9.87747L12.4425 6.43497L13.5 7.49997L9 12L4.5 7.49997L5.5575 6.43497Z" fill="#8D8D8D"/>
-                    </svg>                         -
-                </a> -->
-                <!-- <ul class="about_us_menu">
-                    <li><a class='sub_a' href="#">item</a></li>
-                    <li><a class='sub_a' href="#">item</a></li>
-                    <li><a class='sub_a' href="#">item</a></li>
-                </ul> -->
-                </li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li>
-                    <svg class="button_black_mode" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.9999 18.2778C15.1909 18.2778 17.7777 15.691 17.7777 12.5C17.7777 9.30903 15.1909 6.72223 11.9999 6.72223C8.80897 6.72223 6.22217 9.30903 6.22217 12.5C6.22217 15.691 8.80897 18.2778 11.9999 18.2778Z" stroke="#8D8D8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M18.3469 18.8466L18.2313 18.7311M18.2313 6.26885L18.3469 6.15329L18.2313 6.26885ZM5.65355 18.8466L5.76911 18.7311L5.65355 18.8466ZM12.0002 3.68218V3.61107V3.68218ZM12.0002 21.3888V21.3177V21.3888ZM3.18244 12.5H3.11133H3.18244ZM20.8891 12.5H20.818H20.8891ZM5.76911 6.26885L5.65355 6.15329L5.76911 6.26885Z" stroke="#8D8D8D" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </li>
-            </ul>
-            <button class="burger_btn" id="burger_btn">
-                <div class="icon-left"></div>
-                <div class="icon-right"></div>
-            </button>
-            <div class="burger_menu" id="burger_menu">
-                <div class="black_bg" id="bg"></div>
-                <div class="close_burger" id="close_burger"></div>
-                <nav id="burger_nav">
-                    <a href="./pages/about_us.html">Naš tím</a>
-                    <!-- <a href="#">Live</a> -->
-                    <a href="./pages/gallery.html">Galéria</a>
-                    <!-- <a href="#">O nás</a> -->
-                    <a href="#">Kontakt</a>
-                    <a href="#">FAQ</a>
-                </nav>
-            </div>
-        </div>
-    </div>
-</header>
+
 
 <div class="under_header">
     <div class="orange_trapezoid"></div>
@@ -289,8 +194,12 @@
                             <img src="assets/team/girl.webp" alt="girl" data-aos="fade-up"
                             data-aos-offset="200"
                             data-aos-delay="1050"
-                            data-aos-duration="800"
-                            data-aos-anchor-placement="top-center">
+                            data-aos-duration="800">
+                             data-aos="fade-up"
+                            data-aos-offset="200"
+                            data-aos-delay="550"
+                            data-aos-duration="1000"
+                            data-aos-anchor-placement="top-center" 
                         </div>
                         <div class="girl_container2">
                             <div class="bg_block" data-aos="fade-up"
@@ -312,7 +221,7 @@
                         data-aos-delay="1550"
                         data-aos-duration="1000" data-aos-anchor-placement="top-bottom"
                         >Naša cesta začala ako študentská televízia, ktorá nosila televízny obsah priamo k študentom UNIZY. Dnes s radosťou zachytávame a fotíme moderný obsah, no stále si zachovávame lásku k autentickým informáciám.</p>
-                        <a href="#">O nás</a>
+                        <a href="#">Pridaj sa</a>
                 </div>
             </div>
     </div>
@@ -451,7 +360,7 @@
     <h2>Čo ti ponúkame</h2>
     <p class="what_txt">Otvárame brány pre nové začiatky. Využi výhody našej štedentskej komunity pre budovanie budúcnosti.</p>
     <div class="card_container">
-        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+        <div class="card" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.1 5.06007L8.06004 12.9201C4.20004 15.4401 4.20004 21.0801 8.06004 23.6001L20.1 31.4601C22.26 32.8801 25.82 32.8801 27.98 31.4601L39.96 23.6001C43.8 21.0801 43.8 15.4601 39.96 12.9401L27.98 5.08007C25.82 3.64007 22.26 3.64007 20.1 5.06007Z" stroke="#01B0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M11.2602 26.1599L11.2402 35.5399C11.2402 38.0799 13.2002 40.7999 15.6002 41.5999L21.9802 43.7199C23.0802 44.0799 24.9002 44.0799 26.0202 43.7199L32.4002 41.5999C34.8002 40.7999 36.7602 38.0799 36.7602 35.5399V26.2599" stroke="#01B0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -460,7 +369,7 @@
             <p>Zručnosti</p>      
             <p>Rád by si sa naučil novým skillom a nevieš kde začať? My ťa naučíme, niesme profesionáli ale niečo už predsa vieme.</p>             
         </div>
-        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+        <div class="card" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M44 12V16.84C44 20 42 22 38.84 22H32V8.02C32 5.8 33.82 4 36.04 4C38.22 4.02 40.22 4.9 41.66 6.34C43.1 7.8 44 9.8 44 12Z" stroke="#01B0FF" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M4 14V42C4 43.66 5.88 44.6 7.2 43.6L10.62 41.04C11.42 40.44 12.54 40.52 13.26 41.24L16.58 44.58C17.36 45.36 18.64 45.36 19.42 44.58L22.78 41.22C23.48 40.52 24.6 40.44 25.38 41.04L28.8 43.6C30.12 44.58 32 43.64 32 42V8C32 5.8 33.8 4 36 4H14H12C6 4 4 7.58 4 12V14Z" stroke="#01B0FF" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -472,7 +381,7 @@
             <p>Prax</p>      
             <p>Všeci jú chcú, no málokto ju má. My ti túto možnosť rádi dáme - či už pre školské účely alebo neskôr pre uplatnenie v pohovoroch.</p>             
         </div>
-        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+        <div class="card" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.3201 21.74C18.1201 21.72 17.8801 21.72 17.6601 21.74C12.9001 21.58 9.12012 17.68 9.12012 12.88C9.12012 7.98 13.0801 4 18.0001 4C22.9001 4 26.8801 7.98 26.8801 12.88C26.8601 17.68 23.0801 21.58 18.3201 21.74Z" stroke="#01B0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M32.8201 8C36.7001 8 39.8201 11.14 39.8201 15C39.8201 18.78 36.8201 21.86 33.0801 22C32.9201 21.98 32.7401 21.98 32.5601 22" stroke="#01B0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -530,9 +439,24 @@
                     <div class="swiper-slide">
                         <div class="card">
                             <div class="show">
+                            <p>Fotograf</p>
+                            <p>Zachytávaj úchvatné obrázky rôznymi fotoaparátmi, aby si vytváral kvalitné vizuály pre rôzne účely.</p>
+                            <ul>
+                                <li>Čo od teba budeme očakávať:</li>
+                                <li>kreatívny pohľad na svet</li>
+                                <li>fotografovanie</li>
+                                <li>postprodukcia fotografií</li>
+                                <li>komunikácia zo zákazníkmi</li>
+                            </ul>
+                            <a href="#">Pridaj sa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="show">
                             <p>Kameraman</p>
                             <p>Prinášaj svoju kreativitu do tvorby vizuálne pútavých diel pomocou strihu a našich kamier.</p>
-                            <button type="button">Viac info</button>
                             <ul>
                                 <li>Čo od teba budeme očakávať:</li>
                                 <li>kreativita</li>
@@ -548,26 +472,8 @@
                     <div class="swiper-slide">
                         <div class="card">
                             <div class="show">
-                            <p>Fotograf</p>
-                            <p>Zachytávaj úchvatné obrázky rôznymi fotoaparátmi, aby si vytváral kvalitné vizuály pre rôzne účely.</p>
-                            <button type="button">Viac info</button>
-                            <ul>
-                                <li>Čo od teba budeme očakávať:</li>
-                                <li>kreatívny pohľad na svet</li>
-                                <li>fotografovanie</li>
-                                <li>postprodukcia fotografií</li>
-                                <li>komunikácia zo zákazníkmi</li>
-                            </ul>
-                            <a href="#">Pridaj sa</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="show">
                             <p>Moderátor</p>
                             <p>Zaujmi a oslov divákov. Budeš mať na starosti prípravu a pútavé prezentovanie informácií a obsahu pred kamerou.</p>
-                            <button type="button">Viac info</button>
                             <ul>
                                 <li>Čo od teba budeme očakávať:</li>
                                 <li>vynikajúce komunikačné zručnosti</li>
@@ -583,7 +489,6 @@
                             <div class="show">
                             <p>Marketing</p>
                             <p>Aktívne sa podieľaj na marketingových aktivitách s kreatívnym prístupom. Analyzuj potenciálne príležitosti a hľadaj spolupráce.</p>
-                            <button type="button">Viac info</button>
                             <ul>
                                 <li>Čo od teba budeme očakávať:</li>
                                 <li>marketingové aktivity</li>
@@ -600,7 +505,6 @@
                             <div class="show">
                             <p>Mediálny manažér</p>
                             <p>Buduj našu online prítomnosť. Využi svoje  znalosti na správu sociálnych sietí a tvorbu pútavých príspevkov.</p>
-                            <button type="button">Viac info</button>
                             <ul>
                                 <li>Čo od teba budeme očakávať:</li>
                                 <li>základne znalosti práce z grafickými editormi</li>
@@ -616,7 +520,6 @@
                             <div class="show">
                             <p>Špecialista v odbore</p>
                             <p>Ovládam niečo čo ste nespomenuli alebo by som vám mohol byť užitočný.</p>
-                            <button type="button">Viac info</button>
                             <ul>
                                 <li>Čo od teba budeme očakávať:</li>
                                 <li>tímový duch</li>
@@ -895,12 +798,13 @@
                         </div>
                        </div>
                     </div>
+                     <div class="swiper-pagination"></div> 
                 </div>  
              </div>
         </div>
         <div class="contanct_us">
             <p>KONTAKT</p>
-            <p class="lets_start_txt">Začnime spolu<br> získavať skúsenosti.</p>
+            <p class="lets_start_txt">Začnime spolu získavať skúsenosti.</p>
             <div class="form_div">
                 <p>Kontaktuj nás</p>
                 <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -910,10 +814,6 @@
             <div class="form_open">
                 <div class="closewhereever"></div>
                 <form action="submit">
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M3 3L21 21" stroke="#292D32" stroke-width="2.5" stroke-linecap="round"/>
-                        <path d="M3 21L21 3" stroke="#292D32" stroke-width="2.5" stroke-linecap="round"/>
-                      </svg>
                     <p class="form_hi">Ahoj.</p>
                     <p class="form_dont_worry">Neboj sa nám ozvať, nehryzieme.</p>
                     <section>
@@ -991,7 +891,7 @@
             </div>
         </div>
         <div class="above_footer_block">
-            <svg class="footer_itecko_logo" "356" height="90" viewBox="0 0 356 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="356" height="90" viewBox="0 0 356 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M77.5712 47.3887C79.4138 46.326 79.4138 43.6667 77.5712 42.604L76.6414 42.0677L42.8028 42.0677L42.8028 67.4418L77.5712 47.3887ZM17.003 82.3223L4.39548 89.5938C2.55432 90.6557 0.253906 89.3269 0.253906 87.2014L0.253908 42.0677H17.003L17.003 82.3223ZM23.7596 78.4253L23.7596 38.6894V35.3111L20.3813 35.3111H0.253909L0.253909 23.2074L20.3813 23.2074L39.4245 23.2074H43.9411L64.9267 35.3111H39.4245H36.0462V38.6894L36.0462 71.3388L23.7596 78.4253ZM32.2264 16.4507L4.39548 0.398905C2.55432 -0.663013 0.25391 0.665795 0.25391 2.79125L0.253909 16.4507L20.3813 16.4507H32.2264Z" fill="url(#paint0_linear_1235_1447)"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M34.1777 82.3146C41.3471 87.1467 49.9844 89.9673 59.2805 89.9673C84.1173 89.9673 104.252 69.8331 104.252 44.9964C104.252 20.1596 84.1173 0.0253906 59.2805 0.0253906C49.9854 0.0253906 41.3489 2.84545 34.1799 7.67666L42.5596 12.5147C47.5697 9.93036 53.2547 8.47116 59.2805 8.47116C79.4529 8.47116 95.8057 24.824 95.8057 44.9964C95.8057 65.1687 79.4529 81.5216 59.2805 81.5216C53.2537 81.5216 47.5678 80.0619 42.5571 77.4767L34.1777 82.3146Z" fill="#ECECEC"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M307.215 19.0113H295.579L277.477 38.81V4.30371H267.618V60.7906H277.477V50.366L283.376 44.1435L295.174 60.7906H306.65L290.003 37.6786L307.215 19.0113ZM161.081 53.356C162.778 53.356 164.314 52.7095 165.203 51.8206L168.031 58.4471C165.687 60.4674 162.293 61.7603 159.142 61.7603C152.192 61.7603 147.343 56.75 147.343 49.7195V27.1732V19.0113V7.53615H156.96V19.0113H166.415V27.1732H156.96V48.5073C156.96 51.3357 158.738 53.356 161.081 53.356ZM137.077 60.7906H127.218V19.0113H137.077V60.7906ZM195.159 53.0327C189.179 53.0327 184.815 48.9922 183.603 43.2546H215.119C215.119 27.8197 207.604 18.0416 194.674 18.0416C182.795 18.0416 173.421 27.254 173.421 39.7797C173.421 52.6287 183.28 61.7603 195.24 61.7603C201.301 61.7603 208.574 59.1744 212.21 55.2955L205.988 48.8306C203.644 51.2549 199.038 53.0327 195.159 53.0327ZM195.078 26.7692C200.977 26.7692 204.533 30.4865 205.664 35.7392H183.684C185.138 30.244 189.583 26.7692 195.078 26.7692ZM260.03 54.7298C255.989 59.0128 250.413 61.7603 243.787 61.7603C231.746 61.7603 221.483 51.7398 221.483 39.8605C221.483 30.9568 227.249 23.1426 235.275 19.7867L243.464 24.5857L252.007 19.5797C254.985 20.7654 257.627 22.581 259.787 24.8297L253.161 30.6481C250.898 28.143 247.423 26.4459 243.868 26.4459C236.999 26.4459 231.261 32.5876 231.261 39.8605C231.261 47.2143 236.999 53.356 243.868 53.356C247.504 53.356 251.06 51.659 253.403 48.9922L260.03 54.7298ZM355.744 39.8605C355.744 51.7398 345.481 61.7603 333.36 61.7603C321.238 61.7603 310.975 51.7398 310.975 39.8605C310.975 27.9813 321.238 18.0416 333.36 18.0416C345.481 18.0416 355.744 27.9813 355.744 39.8605ZM320.591 39.8605C320.591 47.2143 326.41 53.356 333.36 53.356C340.229 53.356 346.047 47.2143 346.047 39.8605C346.047 32.5876 340.229 26.4459 333.36 26.4459C326.41 26.4459 320.591 32.5876 320.591 39.8605Z" fill="#ECECEC"/>
@@ -1069,6 +969,7 @@
             <div class="vert_line"></div>
             <div class="kostya">
                 <p>developed by</p>
+                 <a href="#" data-tooltip="Жыве Беларусь!">KOSTYA</a> 
                 <a href="#">KOSTYA</a>
                  <img src="assets/footer/links/heart.svg" class="live"> 
             </div>

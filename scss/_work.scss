@@ -1,0 +1,243 @@
+@import '../scss/_mixin';
+
+.work{
+    margin-top: 200px;
+    .work_block{
+        @include flex-center(flex, center, space-between);
+        .first{
+            width: 652px;
+            p{
+                &:first-child{
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 32px;
+                    color: #01B0FF;
+                    text-transform: uppercase;
+                }
+                &:nth-child(2){
+                    margin: 10px 0 32px 0;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 48px;
+                }
+                &:nth-child(3){
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 22px;
+                    line-height: 25px;
+                }
+            }
+        }
+        .second{
+           width: 513px;
+           height: 530px;
+            position: relative;
+            z-index: 1;
+            .first_container{
+                position: absolute;
+                border-radius: 4px;
+                top: 0;
+                right: 0;
+                overflow: hidden;
+                img{
+                    transition: all .2s linear;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+            }
+            .second_container{
+                width: 150px;
+                height: 352px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 2;
+                background: linear-gradient(99.55deg, #00C6FF 2.75%, #0072FF 101.45%);
+                border: 8px solid #F7F7F7;
+                border-radius: 4px;
+                img{
+                    max-width: 260px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 8000px){    
+
+}
+@media (min-width: 1200px) and (max-width: 1299px){
+
+}
+@media (min-width: 1024px) and (max-width: 1200px){  
+    .work{
+        .work_block{
+            .first{
+                p{
+                    &:nth-child(3){
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 894px) and (max-width: 1023px){
+    .work{
+        .work_block{
+            align-items: flex-start;
+            .first{
+                p{
+                    &:nth-child(3){
+                        width: 90%;
+                    }
+                }
+            }
+            .second{
+                .second_container{
+                    border-left: 0;
+                    border-top-left-radius: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 595px) and (max-width: 893px){
+    .work{
+        .work_block{
+            align-items: flex-start;
+            .first{
+                p{
+                    &:nth-child(3){
+                        width: 90%;
+                    }
+                }
+            }
+            .second{
+                .second_container{
+                    border-left: 0;
+                    border-top-left-radius: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 595px) and (max-width:767px){
+    .blue_block{
+        .wrapper{
+            .faq{
+                flex-wrap: wrap;
+                .first{
+                    width: 316px;
+                    height: 494px;
+                    .questions_photos{
+                        div{
+                            &:nth-child(1){
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .above_footer_block{
+                .footer_block_container{
+                    column-gap: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (425px <= width <= 594px){
+    .work{
+        .work_block{
+            flex-wrap: wrap;
+            row-gap: 40px;
+            align-items: flex-start;
+            .first{
+                p{
+                    &:nth-child(3){
+                        width: 90%;
+                    }
+                }
+            }
+            .second{
+                .second_container{
+                    border-left: 0;
+                    border-top-left-radius: 0;
+                    left: unset;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+// @media(min-width: 375px) and (max-width: 424px){
+//     .work{
+//         .work_block{
+//             align-items: flex-start;
+//             .first{
+//                 p{
+//                     &:nth-child(3){
+//                         width: 90%;
+//                     }
+//                 }
+//             }
+//             .second{
+//                 .second_container{
+//                     border-left: 0;
+//                     border-top-left-radius: 0;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media (320px <= width <= 424px){
+    .work{
+        .work_block{
+            flex-wrap: wrap-reverse;
+            align-items: flex-start;
+            .first{
+                p{
+                    &:nth-child(1){
+                        font-size: 14px;
+                    }
+                    &:nth-child(2){
+                        font-size: 28px;
+                        line-height: normal;
+                        margin: 0 0 20px 0;
+                    }
+                    &:nth-child(3){
+                        font-size: 18px;
+                    }
+                }
+            }
+            .second{
+                height: 380px;
+                .first_container{
+                    width: 240px;
+                }
+                .second_container{
+                    border-left: 0;
+                    border-top-left-radius: 0;
+                    width: 92px;
+                    height: 218px;
+                    bottom: 40px;
+                    img{
+                        max-width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
