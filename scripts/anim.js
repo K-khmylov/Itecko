@@ -19,6 +19,7 @@ setInterval(function() {
     setTimeout(function() {txt_container.classList.remove("active")},2000)
 },7000)
 
+
 // var dimensions = {
 //   width: $(window).width(),
 //   height: $(window).height()

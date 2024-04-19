@@ -320,7 +320,102 @@
             }
         }
     }
+
+
+
+// ================================     ABOU_US [NAS TIM]
+
+.photos_collage{
+    .wrapper{
+        .photos_collage_flex_container{
+            .img_container{
+                &:hover{
+                    box-shadow: 4px 4px 24px rgba(173, 192, 221, 0.2);
+                }
+            }
+        }
+    }
 }
+
+.about_us_our_team {
+    .about_us_team_count{
+        .card{
+            .bg_circle{
+                svg{
+                    path{
+                        stroke: #ECECEC;
+                    }
+                }
+            }
+            .card_info_txt{
+                color: #ECECEC;
+            }
+        }
+    }
+    .txt{
+        color: #ECECEC;
+    }
+    .poeple{
+        .card{
+            .card_txt{
+                p{
+                    color: #ECECEC;
+                }
+            }
+        }
+    }
+}
+
+
+// ================================     GALERRY
+
+
+.insta_gallery{
+    .wrapper{
+        h3{
+            color: #ECECEC;
+        }
+    }
+}
+
+
+// ================================     CONTANCT
+
+.about_us_under_header {
+    iframe{
+        filter: invert(100%);
+    }
+    .about_us_blur {
+        background-color: rgba(35, 35, 35, 0.60);
+        .wrapper{
+            .itecko_info_cards{
+                .card{
+                    background: #141517;
+                    p{
+                        &:nth-child(2){
+                            color: #ECECEC;
+                        }
+
+                        &:nth-child(3){
+                            color: #B5B5B5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.how_to_find_us{
+    .wrapper{
+        p{
+            color: #ECECEC;
+        }
+    }
+}
+
+}
+
 
 @keyframes itecko_path1_black{
     0%{

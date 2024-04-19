@@ -299,7 +299,7 @@
             // opacity: 0;
             display: none;
             position: fixed;
-            z-index: 5;
+            z-index: 6;
             top: 0;
             right: 0;
             left: 0;
@@ -695,12 +695,11 @@ footer{
                 .footer_block_container{
                     column-gap: 50px;
                 }
+                .footer_itecko_logo{
+                    width: 40%;
+                    align-self: flex-start;
+                }
             }
-        }
-    }
-    .above_footer_block{
-        .footer_block_container{
-            column-gap: 50px;
         }
     }
 }
@@ -726,12 +725,23 @@ footer{
                 .footer_block_container{
                     column-gap: 50px;
                 }
+                .footer_itecko_logo{
+                    width: 30%;
+                    align-self: flex-start;
+                }
             }
-        }
-    }
-    .above_footer_block{
-        .footer_block_container{
-            column-gap: 50px;
+            .form_open{
+                form{
+                    width: 100vw;
+                    .flex_submit{
+                        div{
+                            .agree{
+                                text-align: left
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -766,7 +776,27 @@ footer{
                     }
                 }
             }
+            .form_open{
+                form{
+                    width: 110%;
+                    section{
+                        margin-bottom: 36px;
+                    }
+                    .flex_submit{
+                        flex-wrap: wrap;
+                        row-gap: 20px;
+                        div{
+                            .agree{
+                                text-align: left
+                            }
+                        }
+                    }
+                }
+            }
             .above_footer_block{
+                svg{
+                    align-self: center;
+                }
                 .footer_block_container{
                     column-gap: 50px;
                 }
@@ -844,6 +874,24 @@ footer{
                 }
             }
         }
+        .form_open{
+            form{
+                padding: 82px 18px 0 70px !important;
+                width: 116vw !important;
+                section{
+                    margin-bottom: 36px !important;
+                }
+                .flex_submit{
+                    flex-wrap: wrap;
+                    row-gap: 20px;
+                    div{
+                        .agree{
+                            text-align: left
+                        }
+                    }
+                }
+            }
+        }
         .contanct_us{
             height: 300px;
             p{
@@ -876,6 +924,10 @@ footer{
         justify-content: unset;
         align-items: unset;
         row-gap: 30px;
+        svg{
+            width: 90%;
+            align-self: center;
+        }
         .footer_itecko_logo{
             margin: 0 auto;
             width: 280px;

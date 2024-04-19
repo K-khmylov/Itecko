@@ -201,6 +201,44 @@
 .black_mode .blue_block .contanct_us p:nth-child(2) {
   color: #ECECEC;
 }
+.black_mode .photos_collage .wrapper .photos_collage_flex_container .img_container:hover {
+  -webkit-box-shadow: 4px 4px 24px rgba(173, 192, 221, 0.2);
+          box-shadow: 4px 4px 24px rgba(173, 192, 221, 0.2);
+}
+.black_mode .about_us_our_team .about_us_team_count .card .bg_circle svg path {
+  stroke: #ECECEC;
+}
+.black_mode .about_us_our_team .about_us_team_count .card .card_info_txt {
+  color: #ECECEC;
+}
+.black_mode .about_us_our_team .txt {
+  color: #ECECEC;
+}
+.black_mode .about_us_our_team .poeple .card .card_txt p {
+  color: #ECECEC;
+}
+.black_mode .insta_gallery .wrapper h3 {
+  color: #ECECEC;
+}
+.black_mode .about_us_under_header iframe {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+.black_mode .about_us_under_header .about_us_blur {
+  background-color: rgba(35, 35, 35, 0.6);
+}
+.black_mode .about_us_under_header .about_us_blur .wrapper .itecko_info_cards .card {
+  background: #141517;
+}
+.black_mode .about_us_under_header .about_us_blur .wrapper .itecko_info_cards .card p:nth-child(2) {
+  color: #ECECEC;
+}
+.black_mode .about_us_under_header .about_us_blur .wrapper .itecko_info_cards .card p:nth-child(3) {
+  color: #B5B5B5;
+}
+.black_mode .how_to_find_us .wrapper p {
+  color: #ECECEC;
+}
 
 @-webkit-keyframes itecko_path1_black {
   0% {

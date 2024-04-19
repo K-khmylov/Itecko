@@ -32,7 +32,7 @@ let burgerNav = document.getElementById('burger_nav');
 let closeBurger = document.getElementById('close_burger');
 let bg = document.getElementById('bg')
 let statisticBlock = document.querySelectorAll('.position')
-
+let header = document.getElementById("header");
 let formCloseMethods = [formCloseCross, formCloseWhereever];
 
 
@@ -507,9 +507,12 @@ buttonBlackMode.addEventListener("click", (e) => {
 // })
 
 form.addEventListener('click', () => {
+    console.log(header)
+    header.style.transform = "translateY(-80px)";
     formOpen.classList.add('open');
     formCloseWhereever.classList.add('open');
     body.style.overflow = 'hidden';
+    // console.log( header.style.zIndex)
 })
 
 
@@ -533,6 +536,7 @@ function handleCloseEvent() {
     formOpen.classList.add('back');
     formCloseWhereever.classList.add('back');
     body.style.overflowY = 'unset';
+    header.style.transform = "translateY(0)";
     setTimeout(() => {
         formOpen.classList.remove('open');
         formCloseWhereever.classList.remove('open');

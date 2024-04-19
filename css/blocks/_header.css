@@ -1,9 +1,11 @@
 header {
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
   position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
-  z-index: 4;
+  z-index: 6;
 }
 header .header_first {
   background-color: #FFF;

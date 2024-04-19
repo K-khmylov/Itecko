@@ -1,11 +1,13 @@
 @import '../scss/_mixin';
 
 header{
+    transition: .4s linear;
     position: fixed;
     left: 0;
     top: 0;
+    // width: 100%;
     width: 100vw;
-    z-index: 4;
+    z-index: 6;
     .header_first{
         background-color: #FFF;
         .above_header{
@@ -489,9 +491,13 @@ header{
 @media (min-width: 1024px) and (max-width: 1200px){
 }
 @media (min-width: 894px) and (max-width: 1023px){
+    // header{
+    //     // width: 100%;
+    // }
 }
 @media (768px <= width <= 893px){
     header{
+        // width: 100%;
         .header_second{
             .wrapper{
                 .nav_bar{
@@ -528,6 +534,7 @@ header{
 
 @media (595px <= width <= 767px){
     header{
+        // width: 100%;
         .header_first{
             display: none;
         }
@@ -544,6 +551,7 @@ header{
 
 @media (425px <= width <= 594px){
     header{
+        // width: 100%;
         .header_first{
             display: none;
         }
@@ -560,6 +568,7 @@ header{
 
 @media(min-width: 375px) and (max-width: 424px){
     header{
+        // width: 100%;
         .header_first{
             display: none;
         }
@@ -576,6 +585,7 @@ header{
 
 @media (min-width: 320px) and (max-width: 374px){
     header{
+        // width: 100%;
         .header_first{
             display: none;
         }

@@ -29,7 +29,7 @@
 @media (min-width: 1200px) and (max-width: 1299px){
 
 }
-@media (min-width: 1024px) and (max-width: 1200px){
+@media (1024px <= width <= 1200px){
     .stud_life_block{
         .stud_life{
             p{
@@ -47,7 +47,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (768px <= width <= 1023px){
     .stud_life_block{
         .stud_life{
             p{
@@ -65,29 +65,7 @@
     }
 }
 
-@media (min-width: 595px) and (max-width: 893px){
-    .stud_life_block{
-        padding: 150px 0;
-        .stud_life{
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            row-gap: 30px;
-            p{
-                &:first-child{
-                    width: 129%;
-                    font-size: 50px;
-                    line-height: 62px;
-                }
-                &:nth-child(2){
-                    margin-left: 0;
-                    text-align: justify;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 425px) and (max-width: 594px){
+@media (595px <= width <= 893px){
     .stud_life_block{
         padding: 150px 0;
         .stud_life{
@@ -109,25 +87,48 @@
     }
 }
 
-@media(min-width: 375px) and (max-width: 424px){
+@media (425px <= width <= 594px){
+    .stud_life_block{
+        padding: 150px 0;
+        .stud_life{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            row-gap: 30px;
+            p{
+                &:first-child{
+                    width: 129%;
+                    font-size: 44px;
+                    line-height: 48px;
+                }
+                &:nth-child(2){
+                    font-size: 20px;
+                    margin-left: 0;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (375px <= width <= 424px){
     .stud_life_block{
         padding: 36px 0;
         .stud_life{
             flex-wrap: wrap;
             justify-content: flex-start;
-            row-gap: 30px;
+            row-gap: 22px;
             p{
                 &:first-child{
                     align-self: stretch;
                     width: 129%;
-                    font-size: 36px;
+                    font-size: 32px;
                     font-weight: 700;
                     line-height: normal;
                 }
                 &:nth-child(2){
                     margin-left: 0;
                     // text-align: justify;
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: 400;
                     line-height: 27px;
                     width: 100%;

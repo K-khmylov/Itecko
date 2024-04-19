@@ -22,7 +22,7 @@
 </head>
 <body>
   
-<header>
+<header id="header">
     <div class="header_first">
         <div class="wrapper">
             <div class="above_header">
@@ -89,8 +89,8 @@
                     <li><a class='sub_a' href="#">item</a></li>
                 </ul> -->
                 </li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="./pages/contact.html">Kontakt</a></li>
+                <li><a href="#main_question_block">FAQ</a></li>
                 <li>
                     <svg class="button_black_mode" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.9999 18.2778C15.1909 18.2778 17.7777 15.691 17.7777 12.5C17.7777 9.30903 15.1909 6.72223 11.9999 6.72223C8.80897 6.72223 6.22217 9.30903 6.22217 12.5C6.22217 15.691 8.80897 18.2778 11.9999 18.2778Z" stroke="#8D8D8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -110,8 +110,8 @@
                     <!-- <a href="#">Live</a> -->
                     <a href="./pages/gallery.html">Galéria</a>
                     <!-- <a href="#">O nás</a> -->
-                    <a href="#">Kontakt</a>
-                    <a href="#">FAQ</a>
+                    <a href="./contact.html">Kontakt</a>
+                    <a href="#main_question_block">FAQ</a>
                 </nav>
             </div>
         </div>
@@ -636,7 +636,7 @@
 
 <div class="blue_block">
     <div class="wrapper">
-        <div class="faq" id="main_question_block">
+        <div class="faq" id="main_question_block" name="main_question_block">
             <div class="first">
                 <img class="questions_photo_bg" src="assets/faq/question.svg">
                 <div class="questions_photos">
@@ -909,7 +909,7 @@
             </div>
             <div class="form_open">
                 <div class="closewhereever"></div>
-                <form action="submit">
+                <form action="mailsender.php" method="post">
                     <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M3 3L21 21" stroke="#292D32" stroke-width="2.5" stroke-linecap="round"/>
                         <path d="M3 21L21 3" stroke="#292D32" stroke-width="2.5" stroke-linecap="round"/>
@@ -991,7 +991,7 @@
             </div>
         </div>
         <div class="above_footer_block">
-            <svg class="footer_itecko_logo" "356" height="90" viewBox="0 0 356 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer_itecko_logo" width="356" height="90" viewBox="0 0 356 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M77.5712 47.3887C79.4138 46.326 79.4138 43.6667 77.5712 42.604L76.6414 42.0677L42.8028 42.0677L42.8028 67.4418L77.5712 47.3887ZM17.003 82.3223L4.39548 89.5938C2.55432 90.6557 0.253906 89.3269 0.253906 87.2014L0.253908 42.0677H17.003L17.003 82.3223ZM23.7596 78.4253L23.7596 38.6894V35.3111L20.3813 35.3111H0.253909L0.253909 23.2074L20.3813 23.2074L39.4245 23.2074H43.9411L64.9267 35.3111H39.4245H36.0462V38.6894L36.0462 71.3388L23.7596 78.4253ZM32.2264 16.4507L4.39548 0.398905C2.55432 -0.663013 0.25391 0.665795 0.25391 2.79125L0.253909 16.4507L20.3813 16.4507H32.2264Z" fill="url(#paint0_linear_1235_1447)"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M34.1777 82.3146C41.3471 87.1467 49.9844 89.9673 59.2805 89.9673C84.1173 89.9673 104.252 69.8331 104.252 44.9964C104.252 20.1596 84.1173 0.0253906 59.2805 0.0253906C49.9854 0.0253906 41.3489 2.84545 34.1799 7.67666L42.5596 12.5147C47.5697 9.93036 53.2547 8.47116 59.2805 8.47116C79.4529 8.47116 95.8057 24.824 95.8057 44.9964C95.8057 65.1687 79.4529 81.5216 59.2805 81.5216C53.2537 81.5216 47.5678 80.0619 42.5571 77.4767L34.1777 82.3146Z" fill="#ECECEC"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M307.215 19.0113H295.579L277.477 38.81V4.30371H267.618V60.7906H277.477V50.366L283.376 44.1435L295.174 60.7906H306.65L290.003 37.6786L307.215 19.0113ZM161.081 53.356C162.778 53.356 164.314 52.7095 165.203 51.8206L168.031 58.4471C165.687 60.4674 162.293 61.7603 159.142 61.7603C152.192 61.7603 147.343 56.75 147.343 49.7195V27.1732V19.0113V7.53615H156.96V19.0113H166.415V27.1732H156.96V48.5073C156.96 51.3357 158.738 53.356 161.081 53.356ZM137.077 60.7906H127.218V19.0113H137.077V60.7906ZM195.159 53.0327C189.179 53.0327 184.815 48.9922 183.603 43.2546H215.119C215.119 27.8197 207.604 18.0416 194.674 18.0416C182.795 18.0416 173.421 27.254 173.421 39.7797C173.421 52.6287 183.28 61.7603 195.24 61.7603C201.301 61.7603 208.574 59.1744 212.21 55.2955L205.988 48.8306C203.644 51.2549 199.038 53.0327 195.159 53.0327ZM195.078 26.7692C200.977 26.7692 204.533 30.4865 205.664 35.7392H183.684C185.138 30.244 189.583 26.7692 195.078 26.7692ZM260.03 54.7298C255.989 59.0128 250.413 61.7603 243.787 61.7603C231.746 61.7603 221.483 51.7398 221.483 39.8605C221.483 30.9568 227.249 23.1426 235.275 19.7867L243.464 24.5857L252.007 19.5797C254.985 20.7654 257.627 22.581 259.787 24.8297L253.161 30.6481C250.898 28.143 247.423 26.4459 243.868 26.4459C236.999 26.4459 231.261 32.5876 231.261 39.8605C231.261 47.2143 236.999 53.356 243.868 53.356C247.504 53.356 251.06 51.659 253.403 48.9922L260.03 54.7298ZM355.744 39.8605C355.744 51.7398 345.481 61.7603 333.36 61.7603C321.238 61.7603 310.975 51.7398 310.975 39.8605C310.975 27.9813 321.238 18.0416 333.36 18.0416C345.481 18.0416 355.744 27.9813 355.744 39.8605ZM320.591 39.8605C320.591 47.2143 326.41 53.356 333.36 53.356C340.229 53.356 346.047 47.2143 346.047 39.8605C346.047 32.5876 340.229 26.4459 333.36 26.4459C326.41 26.4459 320.591 32.5876 320.591 39.8605Z" fill="#ECECEC"/>
@@ -1042,9 +1042,9 @@
                 <div class="footer_block footer_block_ul">
                     <p>Itečko</p>
                     <ul>
-                        <li><a href="#">O nás</a></li>
-                        <li><a href="#">Náš tím</a></li>
-                        <li><a href="#">Galéria</a></li>
+                        <li><a href="/pages/about_us.html">O nás</a></li>
+                        <li><a href="/pages/contact.html">Kontakt</a></li>
+                        <li><a href="/pages/gallery.html">Galéria</a></li>
                         <li><a href="#">Merch</a></li>
                     </ul>
                 </div>

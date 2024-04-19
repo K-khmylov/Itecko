@@ -327,7 +327,7 @@
 .blue_block .contanct_us .form_open {
   display: none;
   position: fixed;
-  z-index: 5;
+  z-index: 6;
   top: 0;
   right: 0;
   left: 0;
@@ -817,10 +817,10 @@ footer .wrapper .vert_line {
        -moz-column-gap: 50px;
             column-gap: 50px;
   }
-  .above_footer_block .footer_block_container {
-    -webkit-column-gap: 50px;
-       -moz-column-gap: 50px;
-            column-gap: 50px;
+  .blue_block .wrapper .above_footer_block .footer_itecko_logo {
+    width: 40%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 @media (min-width: 595px) and (max-width: 767px) {
@@ -840,10 +840,16 @@ footer .wrapper .vert_line {
        -moz-column-gap: 50px;
             column-gap: 50px;
   }
-  .above_footer_block .footer_block_container {
-    -webkit-column-gap: 50px;
-       -moz-column-gap: 50px;
-            column-gap: 50px;
+  .blue_block .wrapper .above_footer_block .footer_itecko_logo {
+    width: 30%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .blue_block .wrapper .form_open form {
+    width: 100vw;
+  }
+  .blue_block .wrapper .form_open form .flex_submit div .agree {
+    text-align: left;
   }
 }
 @media (425px <= width <= 594px) {
@@ -866,6 +872,25 @@ footer .wrapper .vert_line {
   }
   .blue_block .wrapper .faq .second .question_block.open {
     padding-bottom: 175px;
+  }
+  .blue_block .wrapper .form_open form {
+    width: 110%;
+  }
+  .blue_block .wrapper .form_open form section {
+    margin-bottom: 36px;
+  }
+  .blue_block .wrapper .form_open form .flex_submit {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .blue_block .wrapper .form_open form .flex_submit div .agree {
+    text-align: left;
+  }
+  .blue_block .wrapper .above_footer_block svg {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .blue_block .wrapper .above_footer_block .footer_block_container {
     -webkit-column-gap: 50px;
@@ -933,6 +958,21 @@ footer .wrapper .vert_line {
     font-size: 14px;
     line-height: 22px;
   }
+  .blue_block .form_open form {
+    padding: 82px 18px 0 70px !important;
+    width: 116vw !important;
+  }
+  .blue_block .form_open form section {
+    margin-bottom: 36px !important;
+  }
+  .blue_block .form_open form .flex_submit {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .blue_block .form_open form .flex_submit div .agree {
+    text-align: left;
+  }
   .blue_block .contanct_us {
     height: 300px;
   }
@@ -965,6 +1005,12 @@ footer .wrapper .vert_line {
         -ms-flex-align: unset;
             align-items: unset;
     row-gap: 30px;
+  }
+  .above_footer_block svg {
+    width: 90%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .above_footer_block .footer_itecko_logo {
     margin: 0 auto;

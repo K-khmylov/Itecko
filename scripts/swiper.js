@@ -246,3 +246,30 @@ const swiper4 = new Swiper('.swiper4', {
       // }
   }
 });
+
+const swiper_gallery_page = new Swiper('.swiper_gallery_page', {
+  // width
+  loop: true,
+  effect: "coverflow",
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+  freeMode: {
+    enabled: true,
+    sticky: true,
+  },
+  speed: 4000,
+  autoplay: {
+    delay: 0,
+  },
+
+  // slidesPerView: "auto",  
+  // spaceBetween:  14,
+
+});

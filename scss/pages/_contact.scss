@@ -1,0 +1,263 @@
+@import '../../scss/_mixin';
+
+.about_us_under_header.iframe_block {
+    transform: translateY(0);
+    height: 1028px;
+    iframe{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        filter: invert(0);
+    }
+    .about_us_blur {
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 271px;
+        background: rgba(236, 236, 236, 0.60);
+        .wrapper{
+            .itecko_info_cards{
+                transform: translateY(-120px);
+                column-gap: 24px;
+                @include flex-center(flex, center, baseline);
+                .card{
+                    @include flex-center(flex, center, flex-start);
+                    width: 428px;
+                    height: 290px;
+                    background: #fff;
+                    border-radius: 4px;
+                    box-shadow: 4px 4px 24px 0px rgba(152, 170, 197, 0.21);
+                    padding: 24px 10px;
+                    flex-direction: column;
+                    svg{
+                        padding: 12px;
+                        border-radius: 8px;
+                        background: rgba(1, 176, 255, 0.15);
+                    }
+                    p{
+                        text-align: center;
+                        color: #3A424F;
+                        &:nth-child(2){
+                            font-size: 32px;
+                            font-weight: 700;
+                            margin: 15px 0;
+                        }
+
+                        &:nth-child(3){
+                            font-family: 'Ubuntu', sans-serif;
+                            font-size: 20px;
+                            line-height: 150%; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.how_to_find_us{
+    padding: 68px 0 98px 0;
+    text-align: center;
+    .wrapper{
+        h1{
+            color: #01B0FF;
+            font-size: 22px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        p{
+            color: #3A424F;
+            font-size: 48px;
+            font-weight: 700;
+            margin: 8px 0 58px 0;
+        }
+        iframe{
+            // width: 1104px;
+            width: 100%;
+            height: 621px;
+            border-radius: 8px;
+            position: relative;
+            z-index: -1;
+        }
+        // .mask{
+        //     position: absolute;
+        //     z-index: 2;
+        //     top: 0;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     background: linear-gradient(0deg, rgba(45, 52, 63, 0.70) 0%, rgba(45, 52, 63, 0.70) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+        //     width: 100%;
+        //     height: 100%;
+        // }
+    }
+}
+
+
+@media (894px <= width <= 1023px){
+    
+}
+
+@media (768px <= width <= 893px){
+    .about_us_under_header.iframe_block {
+        .about_us_blur {
+            .wrapper {
+                .itecko_info_cards {
+                    .card{
+                        height: 260px;
+                        p{
+                            &:nth-child(3){
+                                  font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@media (595px <= width <= 767px){
+    .about_us_under_header.iframe_block {
+        .about_us_blur {
+            .wrapper {
+                .itecko_info_cards {
+                    column-gap: 14px;
+                    .card{
+                        svg{
+                            display: none;
+                        }
+                        height: 260px;
+                        p{
+                            &:nth-child(3){
+                                  font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    .how_to_find_us{
+        .wrapper{
+            iframe{
+                height: 500px;
+            }
+        }
+    }
+}
+
+@media (425px <= width <= 594px){
+    .about_us_under_header.iframe_block {
+        height: 1528px;
+        .about_us_blur {
+            bottom: 37%;
+            .wrapper {
+                .itecko_info_cards {
+                    justify-content: center;
+                    transform: translateY(0);
+                    row-gap: 24px;
+                    flex-wrap: wrap;
+                    .card{
+                        height: 260px;
+                    }
+                }
+            } 
+        }
+    }
+    .how_to_find_us{
+        .wrapper{
+            iframe{
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media(min-width: 375px) and (max-width: 424px){
+    .about_us_under_header.iframe_block {
+        height: 1528px;
+        .about_us_blur {
+            bottom: 37%;
+            .wrapper {
+                .itecko_info_cards {
+                    justify-content: center;
+                    transform: translateY(0);
+                    row-gap: 24px;
+                    flex-wrap: wrap;
+                    .card{
+                        height: 260px;
+                        p{
+                            &:nth-child(2){
+                                font-size: 26px;
+                            }
+                            &:nth-child(3){
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    .how_to_find_us{
+        padding: 45px 0 61px 0;
+        .wrapper{
+            iframe{
+                height: 200px;
+            }
+            h1{
+                font-size: 16px;
+            }
+            p{
+                font-size: 30px;
+                margin-bottom: 26px;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px){
+    .about_us_under_header.iframe_block {
+        height: 1528px;
+        .about_us_blur {
+            bottom: 37%;
+            .wrapper {
+                .itecko_info_cards {
+                    justify-content: center;
+                    transform: translateY(0);
+                    row-gap: 24px;
+                    flex-wrap: wrap;
+                    .card{
+                        height: 230px;
+                        p{
+                            &:nth-child(2){
+                                font-size: 24px;
+                            }
+                            &:nth-child(3){
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    .how_to_find_us{
+        padding: 45px 0 61px 0;
+        .wrapper{
+            iframe{
+                height: 200px;
+            }
+            h1{
+                font-size: 14px;
+            }
+            p{
+                font-size: 28px;
+                margin-bottom: 26px;
+            }
+        }
+    }
+}
