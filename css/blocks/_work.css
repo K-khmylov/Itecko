@@ -171,6 +171,8 @@
     border-left: 0;
     border-top-left-radius: 0;
     width: 92px;
+    left: unset;
+    right: 148px;
     height: 218px;
     bottom: 40px;
   }

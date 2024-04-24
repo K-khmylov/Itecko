@@ -1,8 +1,10 @@
 .gallery .wrapper {
   padding: 0;
   margin-bottom: 120px;
+  max-width: unset;
 }
 .gallery .wrapper .swiper .swiper-wrapper .swiper-slide .img_container {
+  border-radius: 4px;
   overflow: hidden;
   -webkit-transition: -webkit-filter 0.1s linear;
   transition: -webkit-filter 0.1s linear;

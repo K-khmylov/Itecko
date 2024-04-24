@@ -80,11 +80,25 @@
                                 list-style-image: url(../../assets/vacances/tik.svg);
                                 margin-left: 30px;
                                 li{
-                                    color: #ECECEC;
-                                    line-height: 18px;
                                     margin-bottom: 16px;
+                                    .vacancy_card_txt{
+                                        font-family: 'Ubuntu', sans-serif;
+                                        color: #ECECEC;
+                                        line-height: 18px;
+                                        margin-left: 5px;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                    }
                                     &:first-child{
-                                        font-weight: 500;
+                                        .vacancy_card_txt{
+                                            font-weight: 500;
+                                        }
+                                    }
+                                    &:first-child{
+                                        list-style: none;
+                                        .vacancy_card_txt{
+                                            transform: translateX(-34px);
+                                        }
                                     }
                                 }
                             }
@@ -248,8 +262,10 @@
 @media (320px <= width <= 424px){
     .wrapper_vacance{
         padding-bottom: 36px;
+        padding-top: 0;
         .vacance_block{
             .block_txt{
+                margin-bottom: 38px;
                 flex-wrap: wrap;
                 p{
                     &:nth-child(1){
@@ -265,9 +281,9 @@
             .swiper_vacance{
                 .swiper-wrapper{
                     .swiper-slide{
-                        max-width: 310px;
+                        max-width: 100%;
                         .card{
-                            max-width: 310px;
+                            max-width: 100%;
                             .show{
                                 padding: 17px;
                                 // padding: 0 24px;

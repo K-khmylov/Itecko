@@ -83,6 +83,12 @@
     width: unset;
   }
 }
+@media (320px <= width <= 595px) {
+  .what_can_we_give .card_container .card:hover {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
 @media (320px <= width <= 424px) {
   .what_can_we_give h2 {
     font-size: 28px;

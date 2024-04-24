@@ -278,6 +278,8 @@ function statisticHover(){
 //   };
 // })
 // alert("ASf")
+// let openedQuestion = null;
+
 for (const element of questionSection) {
     element.addEventListener('click', (event) => {
         const targetElement = event.target;
@@ -290,6 +292,8 @@ for (const element of questionSection) {
         }
     });
 }
+
+
 
 
 const enableDarkMode = () => {

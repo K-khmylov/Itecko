@@ -176,7 +176,7 @@
     }
 }
 
-@media(min-width: 375px) and (max-width: 424px){
+@media(375px <= width <= 424px){
     .about_us_under_header.iframe_block {
         height: 1528px;
         .about_us_blur {
@@ -219,7 +219,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 374px){
+@media (320px <= width <= 374px){
     .about_us_under_header.iframe_block {
         height: 1528px;
         .about_us_blur {

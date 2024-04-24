@@ -208,14 +208,19 @@
             justify-content: center;
             column-gap: 34px;
             row-gap: 34px;
-            flex-wrap: wrap;
+            overflow-x: scroll;
+            .card{
+                img{
+                    max-width: unset;
+                }
+            }
         }
     }   
 }
 
 @media (425px <= width <= 594px){
     .about_us_under_header_gallery{
-        min-height: 780px;
+        min-height: 680px;
         overflow-x: hidden;
         .wrapper{
             h1{
@@ -233,14 +238,19 @@
             justify-content: center;
             column-gap: 34px;
             row-gap: 34px;
-            flex-wrap: wrap;
+            overflow-x: scroll;
+            .card{
+                img{
+                    max-width: unset;
+                }
+            }
         }
     }   
 }
 
 @media(min-width: 375px) and (max-width: 424px){
     .about_us_under_header_gallery{
-        min-height: 780px;
+        min-height: 580px;
         overflow-x: hidden;
         .wrapper{
             h1{
@@ -258,14 +268,19 @@
             justify-content: center;
             column-gap: 34px;
             row-gap: 34px;
-            flex-wrap: wrap;
+            overflow-x: scroll;
+            .card{
+                img{
+                    max-width: unset;
+                }
+            }
         }
     }   
 }
 
 @media (min-width: 320px) and (max-width: 374px){
     .about_us_under_header_gallery{
-        min-height: 780px;
+        min-height: 580px;
         overflow-x: hidden;
         .wrapper{
             h1{
@@ -283,7 +298,14 @@
             justify-content: center;
             column-gap: 34px;
             row-gap: 34px;
-            flex-wrap: wrap;
+            overflow-x: scroll;
+            .card{
+                width: 200px;
+                img{
+                    width: 200px;
+                    max-width: unset;
+                }
+            }
         }
     }   
 }

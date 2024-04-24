@@ -1,4 +1,6 @@
 
+@import '../scss/_mixin';
+
 .burger_btn{
     display: none;
     position: absolute;
@@ -86,8 +88,9 @@
 }
 
 .burger_menu{
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     right: 0;
@@ -128,18 +131,28 @@
             animation: backG .4s forwards linear;
         }
     }
-    nav{
+    nav, .links{
+        @include flex-center(flex, center, center);
         position: relative;
         z-index: 6;
+    }
+
+    .links{
+        animation: transform_links .4s linear forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+        margin-bottom: 50px;
+        column-gap: 15px;
+    }
+
+    nav{
         margin-top: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 45px;
         transform: translateY(-220%);
         a{
-            font-size: 17px;
+            font-size: 24px;
+            font-weight: 500;
             line-height: 18px;
             letter-spacing: 0.18px;
             color: #FFF;
@@ -296,5 +309,17 @@
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes transform_links{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .1;
+    }
+    100%{
+        opacity: 1;
     }
 }

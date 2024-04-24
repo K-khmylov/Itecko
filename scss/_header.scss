@@ -59,7 +59,7 @@ header{
         border-bottom: 2px solid #ECECEC;
     }
     .header_second{
-        // background: #F3F3F3;
+        background: #F3F3F3;
         background-color: white;
         // position: relative;
         .wrapper{
@@ -172,7 +172,7 @@ header{
                             bottom: 0;
                             // top: 100%;
                             left: 0;
-                            background-color:#00D2FF;
+                            background-color:#01B0FF;
                             width: 100%;
                             height: 3px;         
                             transform-origin: right;           
@@ -535,6 +535,7 @@ header{
 @media (595px <= width <= 767px){
     header{
         // width: 100%;
+        // background: #f3f3f3;
         .header_first{
             display: none;
         }
@@ -552,6 +553,7 @@ header{
 @media (425px <= width <= 594px){
     header{
         // width: 100%;
+        // background: #f3f3f3;
         .header_first{
             display: none;
         }
@@ -569,6 +571,7 @@ header{
 @media(min-width: 375px) and (max-width: 424px){
     header{
         // width: 100%;
+        // background: #f3f3f3;
         .header_first{
             display: none;
         }
@@ -586,6 +589,7 @@ header{
 @media (min-width: 320px) and (max-width: 374px){
     header{
         // width: 100%;
+        // background: #f3f3f3;
         .header_first{
             display: none;
         }

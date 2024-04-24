@@ -121,7 +121,7 @@
         }
     }
     .event_block_container{
-        background-image: url(../../assets/event_block/bg_black.png);
+        background-image: url(../../assets/event_block/bg_black.webp);
     }
     .stud_life_block{
         background-color: #141517;
@@ -185,7 +185,7 @@
     .itecko_statistic{
         .position{
             p{
-                color: #ECECEC;
+                color: #DFDFDF;
             }
         }
     } 
@@ -193,7 +193,8 @@
         .wrapper{
             .swiper{
                 .swiper-wrapper{
-                    filter: brightness(60%);
+                    // filter: brightness(60%);
+                    filter: blur(unset);
                 }
             }
         }

@@ -164,14 +164,14 @@
 .video_wrapper .wrapper .who_are_we .second p:first-child {
   color: #01B0FF;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 22px;
 }
 .video_wrapper .wrapper .who_are_we .second p:nth-child(3) {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  line-height: 25px;
+  line-height: 150%;
   margin-bottom: 40px;
 }
 .video_wrapper .wrapper .who_are_we .second h1 {
@@ -184,10 +184,8 @@
   border: 3.75px solid #01B0FF;
   border-radius: 5px;
   color: #01B0FF;
-  font-weight: 100;
-  font-style: italic;
+  font-weight: 600;
   font-size: 22px;
-  line-height: 22px;
   background-color: transparent;
   padding: 15px 30px;
   -webkit-transform: translateY(35px);

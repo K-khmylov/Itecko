@@ -79,7 +79,7 @@
   -webkit-text-stroke: 2px #ECECEC;
 }
 .black_mode .event_block_container {
-  background-image: url(../../assets/event_block/bg_black.png);
+  background-image: url(../../assets/event_block/bg_black.webp);
 }
 .black_mode .stud_life_block {
   background-color: #141517;
@@ -122,11 +122,11 @@
   color: #ECECEC;
 }
 .black_mode .itecko_statistic .position p {
-  color: #ECECEC;
+  color: #DFDFDF;
 }
 .black_mode .gallery .wrapper .swiper .swiper-wrapper {
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%);
+  -webkit-filter: blur(unset);
+          filter: blur(unset);
 }
 .black_mode .what_can_we_give h2 {
   color: #ECECEC;

@@ -170,7 +170,6 @@
   width: 518px;
 }
 .under_header .blog .blog_container .first p:first-child {
-  font-style: italic;
   font-weight: 100;
   font-size: 55px;
   line-height: 55px;
@@ -513,6 +512,7 @@
     padding-top: 16px;
   }
   .under_header .blog .blog_container {
+    width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     row-gap: 20px;
@@ -526,8 +526,14 @@
   .under_header .blog .blog_container .first p:nth-child(2) {
     margin-top: 6px;
   }
+  .under_header .blog .blog_container .second {
+    width: 100%;
+  }
+  .under_header .blog .blog_container .second .cards {
+    width: 100%;
+  }
   .under_header .blog .blog_container .second .cards .cards_card {
-    width: 115px;
+    width: 100%;
     height: 156px;
     row-gap: 6px;
   }
@@ -576,7 +582,7 @@
     font-size: 42px;
   }
   .under_header .blog {
-    height: 274px;
+    height: 258px;
     padding-top: 26px;
   }
   .under_header .blog .blog_container {

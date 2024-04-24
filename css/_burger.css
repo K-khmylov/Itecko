@@ -90,12 +90,16 @@
 }
 
 .burger_menu {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   top: 0;
   right: 0;
@@ -140,10 +144,7 @@
   -webkit-animation: backG 0.4s forwards linear;
           animation: backG 0.4s forwards linear;
 }
-.burger_menu nav {
-  position: relative;
-  z-index: 6;
-  margin-top: 100px;
+.burger_menu nav, .burger_menu .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,16 +154,33 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  z-index: 6;
+}
+.burger_menu .links {
+  -webkit-animation: transform_links 0.4s linear forwards;
+          animation: transform_links 0.4s linear forwards;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  opacity: 0;
+  margin-bottom: 50px;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+.burger_menu nav {
+  margin-top: 100px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 20px;
+  row-gap: 45px;
   -webkit-transform: translateY(-220%);
           transform: translateY(-220%);
 }
 .burger_menu nav a {
-  font-size: 17px;
+  font-size: 24px;
+  font-weight: 500;
   line-height: 18px;
   letter-spacing: 0.18px;
   color: #FFF;
@@ -437,5 +455,27 @@
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+@-webkit-keyframes transform_links {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes transform_links {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
   }
 }

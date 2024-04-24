@@ -78,6 +78,7 @@ header .header_first .above_header p {
   color: rgba(35, 35, 35, 0.6);
 }
 header .header_second {
+  background: #F3F3F3;
   background-color: white;
 }
 header .header_second .wrapper {
@@ -231,7 +232,7 @@ header .header_second .wrapper .nav_bar li a::before {
   display: block;
   bottom: 0;
   left: 0;
-  background-color: #00D2FF;
+  background-color: #01B0FF;
   width: 100%;
   height: 3px;
   -webkit-transform-origin: right;
