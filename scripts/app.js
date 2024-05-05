@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 AOS.init();
 let body = document.body;
 let html = document.html;
-let buttonBlackMode = document.querySelector('.button_black_mode');
+let buttonBlackMode = document.querySelectorAll('.button_black_mode');
 let darkMode = localStorage.getItem("dark-mode");
 // let Evenabled = localStorage.getItem("isevent")
 // console.log(Evenabled)
@@ -293,9 +293,6 @@ for (const element of questionSection) {
     });
 }
 
-
-
-
 const enableDarkMode = () => {
     body.classList.add("black_mode");
     localStorage.setItem("dark-mode", "enabled");
@@ -310,14 +307,27 @@ if (darkMode === "enabled") {
     enableDarkMode();
 }
 
-buttonBlackMode.addEventListener("click", (e) => {
-    darkMode = localStorage.getItem("dark-mode");
-    if (darkMode === "disabled") {
-        enableDarkMode();
-    } else {
-        disableDarkMode();
-    }
-})
+buttonBlackMode.forEach(item => {
+    item.addEventListener("click", (e) => {
+        let darkMode = localStorage.getItem("dark-mode");
+        if (darkMode === "disabled") {
+            enableDarkMode();
+        } else {
+            disableDarkMode();
+        }
+        burgerBtn.classList.remove('open');
+        burgerMenu.classList.add('back');
+        setTimeout(()=>{
+            bg.classList.remove('back');
+            burgerMenu.classList.remove('back')
+            bg.classList.remove('open');
+            burgerNav.classList.remove('play');
+            burgerMenu.classList.remove('open');
+            burgerNav.classList.remove('play');
+          }, 500)
+    });
+});
+
 
 // const Scrollbar = window.Scrollbar;
 // let options = {
@@ -512,7 +522,7 @@ buttonBlackMode.addEventListener("click", (e) => {
 
 form.addEventListener('click', () => {
     console.log(header)
-    header.style.transform = "translateY(-80px)";
+    header.style.top = "-80px";
     formOpen.classList.add('open');
     formCloseWhereever.classList.add('open');
     body.style.overflow = 'hidden';
@@ -540,7 +550,7 @@ function handleCloseEvent() {
     formOpen.classList.add('back');
     formCloseWhereever.classList.add('back');
     body.style.overflowY = 'unset';
-    header.style.transform = "translateY(0)";
+    header.style.top = "0";
     setTimeout(() => {
         formOpen.classList.remove('open');
         formCloseWhereever.classList.remove('open');

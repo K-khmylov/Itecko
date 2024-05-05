@@ -224,9 +224,6 @@
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
-.black_mode .about_us_under_header .about_us_blur {
-  background-color: rgba(35, 35, 35, 0.6);
-}
 .black_mode .about_us_under_header .about_us_blur .wrapper .itecko_info_cards .card {
   background: #141517;
 }
