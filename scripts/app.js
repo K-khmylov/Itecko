@@ -315,16 +315,18 @@ buttonBlackMode.forEach(item => {
         } else {
             disableDarkMode();
         }
-        burgerBtn.classList.remove('open');
-        burgerMenu.classList.add('back');
-        setTimeout(()=>{
-            bg.classList.remove('back');
-            burgerMenu.classList.remove('back')
-            bg.classList.remove('open');
-            burgerNav.classList.remove('play');
-            burgerMenu.classList.remove('open');
-            burgerNav.classList.remove('play');
-          }, 500)
+        burgerBtn.classList.toggle('open');
+        burgerMenu.classList.toggle('open');
+        if(burgerBtn.classList.contains('open')){
+            bg.classList.add('open');
+            setTimeout(()=>{burgerNav.classList.add('play')}, 200);
+            body.style.overflowY = 'hidden';
+            body.style.height = "100vh";
+        } else {
+            body.style.overflowY = 'auto';
+            body.style.height = "auto";
+            allback()
+        }
     });
 });
 
