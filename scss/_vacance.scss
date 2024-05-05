@@ -122,12 +122,6 @@
                                     box-shadow: 0px 5px 25px rgba(1, 176, 255, 0.36);
                                     color: white;
                                 }
-                                // &:hover{
-                                //     background: linear-gradient(99.55deg, #00C6FF 2.75%, #0072FF 101.45%);
-                                //     border: 3px solid;
-                                //     box-shadow: 0px 5px 25px rgba(1, 176, 255, 0.36);
-                                //     color: white;
-                                // }
                             }
                         }
                         &:hover{
@@ -143,32 +137,32 @@
                     }
                     &:nth-child(1){
                         .card{
-                            background-image: url(../../assets/vacances/fotograf.png);
+                            background-image: url(../../assets/vacances/fotograf.webp);
                         }
                     }
                     &:nth-child(2){
                         .card{
-                            background-image: url(../../assets/vacances/kameraman.png);
+                            background-image: url(../../assets/vacances/kameraman.webp);
                         }
                     }
                     &:nth-child(3){
                         .card{
-                            background-image: url(../../assets/vacances/moderator.png);
+                            background-image: url(../../assets/vacances/moderator.webp);
                         }
                     }
                     &:nth-child(4){
                         .card{
-                            background-image: url(../../assets/vacances/marketing.png);
+                            background-image: url(../../assets/vacances/marketing.webp);
                         }
                     }
                     &:nth-child(5){
                         .card{
-                            background-image: url(../../assets/vacances/med_manazer.png);
+                            background-image: url(../../assets/vacances/med_manazer.webp);
                         }
                     }
                     &:nth-child(6){
                         .card{
-                            background-image: url(../../assets/vacances/sepc_obor.png);
+                            background-image: url(../../assets/vacances/sepc_obor.webp);
                         }
                     }
                     &:nth-child(5),
@@ -183,15 +177,7 @@
     }
 }
 
-@media (min-width: 1301px) and (max-width: 8000px){    
-
-}
-
-@media (min-width: 1200px) and (max-width: 1299px){
-
-}
-
-@media (min-width: 1024px) and (max-width: 1200px){
+@media (1024px <= width <= 1200px){
     .wrapper_vacance{
         .vacance_block{
             .block_txt{
@@ -208,7 +194,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (768px <= width <= 1023px){
     .wrapper_vacance{
         .vacance_block{
             .block_txt{
@@ -227,7 +213,7 @@
     }
 }
 
-@media (min-width: 595px) and (max-width: 893px){
+@media (595px <= width <= 893px){
     .wrapper_vacance{
         .vacance_block{
             .block_txt{
@@ -251,11 +237,11 @@
     }
 }
 
-@media (min-width: 425px) and (max-width: 594px){
+@media (425px <= width <= 594px){
     
 }
 
-@media(min-width: 375px) and (max-width: 424px){
+@media(375px <= width <= 424px){
     
 }
 
@@ -286,7 +272,6 @@
                             max-width: 100%;
                             .show{
                                 padding: 17px;
-                                // padding: 0 24px;
                                 top: 405px;
                                 p{
                                     &:first-child{

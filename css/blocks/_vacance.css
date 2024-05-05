@@ -143,28 +143,28 @@
   bottom: 32px;
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(1) .card {
-  background-image: url(../../assets/vacances/fotograf.png);
+  background-image: url(../../assets/vacances/fotograf.webp);
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(2) .card {
-  background-image: url(../../assets/vacances/kameraman.png);
+  background-image: url(../../assets/vacances/kameraman.webp);
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(3) .card {
-  background-image: url(../../assets/vacances/moderator.png);
+  background-image: url(../../assets/vacances/moderator.webp);
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(4) .card {
-  background-image: url(../../assets/vacances/marketing.png);
+  background-image: url(../../assets/vacances/marketing.webp);
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(5) .card {
-  background-image: url(../../assets/vacances/med_manazer.png);
+  background-image: url(../../assets/vacances/med_manazer.webp);
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(6) .card {
-  background-image: url(../../assets/vacances/sepc_obor.png);
+  background-image: url(../../assets/vacances/sepc_obor.webp);
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(5) .show, .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(6) .show {
   top: 382px;
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (1024px <= width <= 1200px) {
   .wrapper_vacance .vacance_block .block_txt p:first-child {
     width: 100%;
   }
@@ -172,7 +172,7 @@
     width: 132%;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (768px <= width <= 1023px) {
   .wrapper_vacance .vacance_block .block_txt p:first-child {
     width: 100%;
   }
@@ -182,7 +182,7 @@
     margin-top: unset;
   }
 }
-@media (min-width: 595px) and (max-width: 893px) {
+@media (595px <= width <= 893px) {
   .wrapper_vacance .vacance_block .block_txt {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

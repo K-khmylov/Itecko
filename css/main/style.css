@@ -3228,6 +3228,9 @@ header .header_second .wrapper .nav_bar .button_black_mode:hover path {
   margin: 16px auto 56px auto;
   width: 788px;
 }
+.what_can_we_give .space {
+  margin: 30px 0;
+}
 .what_can_we_give .card_container {
   overflow: unset;
   display: -webkit-box;
@@ -3268,7 +3271,7 @@ header .header_second .wrapper .nav_bar .button_black_mode:hover path {
           transform: scale(1.1, 1.1);
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (1024px <= width <= 1200px) {
   .what_can_we_give .card_container .card {
     width: 304px;
   }
@@ -3656,28 +3659,28 @@ header .header_second .wrapper .nav_bar .button_black_mode:hover path {
   bottom: 32px;
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(1) .card {
-  background-image: url(../../assets/vacances/fotograf.png);
+  background-image: url(../../assets/vacances/fotograf.webp);
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(2) .card {
-  background-image: url(../../assets/vacances/kameraman.png);
+  background-image: url(../../assets/vacances/kameraman.webp);
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(3) .card {
-  background-image: url(../../assets/vacances/moderator.png);
+  background-image: url(../../assets/vacances/moderator.webp);
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(4) .card {
-  background-image: url(../../assets/vacances/marketing.png);
+  background-image: url(../../assets/vacances/marketing.webp);
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(5) .card {
-  background-image: url(../../assets/vacances/med_manazer.png);
+  background-image: url(../../assets/vacances/med_manazer.webp);
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(6) .card {
-  background-image: url(../../assets/vacances/sepc_obor.png);
+  background-image: url(../../assets/vacances/sepc_obor.webp);
 }
 .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(5) .show, .wrapper_vacance .vacance_block .swiper_vacance .swiper-wrapper .swiper-slide:nth-child(6) .show {
   top: 382px;
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (1024px <= width <= 1200px) {
   .wrapper_vacance .vacance_block .block_txt p:first-child {
     width: 100%;
   }
@@ -3685,7 +3688,7 @@ header .header_second .wrapper .nav_bar .button_black_mode:hover path {
     width: 132%;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (768px <= width <= 1023px) {
   .wrapper_vacance .vacance_block .block_txt p:first-child {
     width: 100%;
   }
@@ -3695,7 +3698,7 @@ header .header_second .wrapper .nav_bar .button_black_mode:hover path {
     margin-top: unset;
   }
 }
-@media (min-width: 595px) and (max-width: 893px) {
+@media (595px <= width <= 893px) {
   .wrapper_vacance .vacance_block .block_txt {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -5490,10 +5493,6 @@ footer .wrapper .vert_line {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.photos_collage .wrapper .photos_collage_flex_container .photos_collage_block .img_container:not(:hover) {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-}
 .photos_collage .wrapper .photos_collage_flex_container .photos_collage_block .img_container:not(:hover) img {
   -webkit-filter: blur(0);
           filter: blur(0);
@@ -6194,7 +6193,7 @@ footer .wrapper .vert_line {
 }
 
 .gallery_block {
-  margin: 0 auto 80px auto;
+  margin: 150px auto 80px auto;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
@@ -6262,6 +6261,9 @@ footer .wrapper .vert_line {
        -moz-column-gap: 30px;
             column-gap: 30px;
   }
+  .gallery_block {
+    margin-top: 50px;
+  }
 }
 @media (768px <= width <= 893px) {
   .about_us_under_header_gallery .wrapper h1 {
@@ -6271,6 +6273,9 @@ footer .wrapper .vert_line {
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
+  }
+  .gallery_block {
+    margin-top: 50px;
   }
 }
 @media (595px <= width <= 767px) {
@@ -6292,6 +6297,9 @@ footer .wrapper .vert_line {
   }
   .insta_gallery .insta_content .card img {
     max-width: unset;
+  }
+  .gallery_block {
+    margin-top: 50px;
   }
 }
 @media (425px <= width <= 594px) {
@@ -6319,6 +6327,9 @@ footer .wrapper .vert_line {
   .insta_gallery .insta_content .card img {
     max-width: unset;
   }
+  .gallery_block {
+    margin-top: 50px;
+  }
 }
 @media (min-width: 375px) and (max-width: 424px) {
   .about_us_under_header_gallery {
@@ -6344,6 +6355,9 @@ footer .wrapper .vert_line {
   }
   .insta_gallery .insta_content .card img {
     max-width: unset;
+  }
+  .gallery_block {
+    margin-top: 50px;
   }
 }
 @media (min-width: 320px) and (max-width: 374px) {
@@ -6374,6 +6388,9 @@ footer .wrapper .vert_line {
   .insta_gallery .insta_content .card img {
     width: 200px;
     max-width: unset;
+  }
+  .gallery_block {
+    margin-top: 50px;
   }
 }
 .about_us_under_header.iframe_block {
