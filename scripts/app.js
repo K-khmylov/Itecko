@@ -315,8 +315,8 @@ buttonBlackMode.forEach(item => {
         } else {
             disableDarkMode();
         }
-        burgerBtn.classList.toggle('open');
-        burgerMenu.classList.toggle('open');
+        burgerBtn.classList.remove('open');
+        burgerMenu.classList.remove('open');
         if(burgerBtn.classList.contains('open')){
             bg.classList.add('open');
             setTimeout(()=>{burgerNav.classList.add('play')}, 200);
