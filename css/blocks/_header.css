@@ -252,9 +252,6 @@ header .header_second .wrapper .nav_bar li a:hover::before {
 header .header_second .wrapper .nav_bar li a:hover {
   color: #2D343F;
 }
-header .header_second .wrapper .nav_bar .button_black_mode {
-  margin-left: 50px;
-}
 header .header_second .wrapper .nav_bar .button_black_mode path {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;

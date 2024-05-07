@@ -207,7 +207,7 @@ const swiper4 = new Swiper('.swiper4', {
     draggable: false,
     // speed: 1200,
     allowTouchMove:false,
-    speed: 800,
+    speed: 300,
 
     // pagination: {
     //   el: '.swiper-pagination',

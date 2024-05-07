@@ -33,6 +33,7 @@ let closeBurger = document.getElementById('close_burger');
 let bg = document.getElementById('bg')
 let statisticBlock = document.querySelectorAll('.position')
 let header = document.getElementById("header");
+let faq = document.getElementById("faq");
 let formCloseMethods = [formCloseCross, formCloseWhereever];
 
 
@@ -309,28 +310,37 @@ if (darkMode === "enabled") {
 
 buttonBlackMode.forEach(item => {
     item.addEventListener("click", (e) => {
+        faqAndBlackCloseBurger("black");
+    });
+});
+
+faq.addEventListener("click", () => {
+    faqAndBlackCloseBurger("");
+})
+
+
+function faqAndBlackCloseBurger(variable){
+    if (variable === "black") {
         let darkMode = localStorage.getItem("dark-mode");
         if (darkMode === "disabled") {
             enableDarkMode();
         } else {
             disableDarkMode();
         }
-        burgerBtn.classList.remove('open');
-        burgerMenu.classList.remove('open');
-        if(burgerBtn.classList.contains('open')){
-            bg.classList.add('open');
-            setTimeout(()=>{burgerNav.classList.add('play')}, 200);
-            body.style.overflowY = 'hidden';
-            body.style.height = "100vh";
-        } else {
-            body.style.overflowY = 'auto';
-            body.style.height = "auto";
-            allback()
-        }
-    });
-});
-
-
+    }
+    burgerBtn.classList.remove('open');
+    burgerMenu.classList.remove('open');
+    if(burgerBtn.classList.contains('open')){
+        bg.classList.add('open');
+        setTimeout(()=>{burgerNav.classList.add('play')}, 200);
+        body.style.overflowY = 'hidden';
+        body.style.height = "100vh";
+    } else {
+        body.style.overflowY = 'auto';
+        body.style.height = "auto";
+        allback()
+    }
+}
 // const Scrollbar = window.Scrollbar;
 // let options = {
 //   dumping: 0,
@@ -524,7 +534,7 @@ buttonBlackMode.forEach(item => {
 
 form.addEventListener('click', () => {
     console.log(header)
-    header.style.top = "-80px";
+    header.style.top = "-100px";
     formOpen.classList.add('open');
     formCloseWhereever.classList.add('open');
     body.style.overflow = 'hidden';

@@ -28,7 +28,7 @@
           transform: scale(1.1, 1.1);
 }
 .gallery .wrapper .swiper2 {
-  margin: 24px 0;
+  margin: 18px 0;
 }
 .gallery .wrapper .swiper2 .swiper-wrapper .swiper-slide {
   -webkit-transform: translateX(200px);

@@ -135,8 +135,8 @@
   border: 2px solid transparent;
   position: relative;
   z-index: 3;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,8 +156,8 @@
   font-size: 28px;
   line-height: 28px;
   color: #FFFFFF;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .blue_block .faq .second .swiper4 .question_block .open_question_txt {
   pointer-events: none;
@@ -167,8 +167,8 @@
   -webkit-transform: translateY(76px);
           transform: translateY(76px);
   opacity: 0;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .blue_block .faq .second .swiper4 .question_block .open_question_txt p {
   font-family: "Ubuntu", sans-serif;
@@ -181,8 +181,8 @@
   pointer-events: none;
 }
 .blue_block .faq .second .swiper4 .question_block svg path {
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .blue_block .faq .second .swiper4 .question_block:hover {
   background: rgba(255, 255, 255, 0.1);

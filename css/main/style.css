@@ -733,9 +733,6 @@ header .header_second .wrapper .nav_bar li a:hover::before {
 header .header_second .wrapper .nav_bar li a:hover {
   color: #2D343F;
 }
-header .header_second .wrapper .nav_bar .button_black_mode {
-  margin-left: 50px;
-}
 header .header_second .wrapper .nav_bar .button_black_mode path {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -3177,7 +3174,7 @@ header .header_second .wrapper .nav_bar .button_black_mode:hover path {
           transform: scale(1.1, 1.1);
 }
 .gallery .wrapper .swiper2 {
-  margin: 24px 0;
+  margin: 18px 0;
 }
 .gallery .wrapper .swiper2 .swiper-wrapper .swiper-slide {
   -webkit-transform: translateX(200px);
@@ -3899,8 +3896,8 @@ header .header_second .wrapper .nav_bar .button_black_mode:hover path {
   border: 2px solid transparent;
   position: relative;
   z-index: 3;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3920,8 +3917,8 @@ header .header_second .wrapper .nav_bar .button_black_mode:hover path {
   font-size: 28px;
   line-height: 28px;
   color: #FFFFFF;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .blue_block .faq .second .swiper4 .question_block .open_question_txt {
   pointer-events: none;
@@ -3931,8 +3928,8 @@ header .header_second .wrapper .nav_bar .button_black_mode:hover path {
   -webkit-transform: translateY(76px);
           transform: translateY(76px);
   opacity: 0;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .blue_block .faq .second .swiper4 .question_block .open_question_txt p {
   font-family: "Ubuntu", sans-serif;
@@ -3945,8 +3942,8 @@ header .header_second .wrapper .nav_bar .button_black_mode:hover path {
   pointer-events: none;
 }
 .blue_block .faq .second .swiper4 .question_block svg path {
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .blue_block .faq .second .swiper4 .question_block:hover {
   background: rgba(255, 255, 255, 0.1);
